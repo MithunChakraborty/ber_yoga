@@ -1,0 +1,123 @@
+@media (max-width: 1600px) {
+  html {
+    font-size: 7px;
+  }
+  .login-btn {
+    width: 100px !important;
+    height: 34px !important;
+  }
+}
+@media (max-width: 1199px) {
+  html {
+    font-size: 6px;
+  }
+  .login-btn {
+    width: 80px !important;
+    height: 27px !important;
+  }
+  .main-content {
+    margin-right: 0 !important;
+  }
+  .choice {
+    /* flex-wrap: wrap !important; */
+  }
+  .third-text {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  .third-section {
+    height: auto !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background: url(../img/VectorSmartObject3.png) no-repeat bottom;
+    background-size: contain;
+  }
+  .second-section {
+    height: 80vh !important;
+  }
+  .section-4-5 {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .text-section-4 {
+    margin-top: 10rem !important;
+    margin-right: 0 !important;
+  }
+  .text-section-4 p {
+    margin-left: 0 !important;
+    width: auto !important;
+  }
+  .text-section-4 a {
+    margin-left: 0 !important;
+  }
+  .text-section-5 {
+    margin-left: 0 !important;
+  }
+  .text-section-5 p {
+    margin-left: 0 !important;
+    width: auto !important;
+  }
+  .text-section-5 a {
+    margin-left: 0 !important;
+  }
+  .price {
+    height: auto !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-item {
+    /* display: none !important; */
+  }
+  footer {
+    background-size: cover;
+    background: url(../img/VectorSmartObjectEnd.png) no-repeat top;
+    height: 1300px !important;
+  }
+  .footer {
+    background-size: 100% 100% !important;
+    width: 90% !important;
+  }
+  .footer-nav {
+    margin-top: 6rem !important;
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    margin-bottom: 0 !important;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 6px;
+  }
+  .visible-lg {
+    display: none;
+  }
+  .m-menu-link {
+    display: block;
+  }
+  .main-content {
+    margin-right: 0 !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 5px;
+  }
+  .main-content {
+    width: 270px !important;
+    text-align: center;
+  }
+  .buttons {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
