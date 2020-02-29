@@ -1,0 +1,101 @@
+@media (max-width: 1400px) {
+    html {
+        font-size: 7px;
+    }
+}
+@media (max-width: 900px) {
+    html {
+        font-size: 6px;
+    }
+    header {
+        grid-template-columns: 90%;
+    }
+    .header-content {
+        grid-template-columns: 8rem 1fr !important;
+    }
+    footer {
+        height: auto !important;
+    }
+    .footer-content {
+        width: 100% !important;
+        height: auto !important;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)) !important;
+    }
+    .footer-content div:nth-child(2) {
+        justify-self: center !important;
+    }
+    .footer-content div:nth-child(4) {
+        justify-self: center !important;
+    }
+    .footer-content p:first-child {
+        justify-self: center !important;
+    }
+    .hidden-mobile {
+        display: none !important;
+    }
+    .btn-active {
+        display: block !important;
+        justify-self: end;
+    }
+    .menu-btn img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .menu-btn-close img {
+        width: 4rem;
+        height: 4rem;
+    }
+    .menu-active {
+        height: 100vh !important;
+        align-content: flex-start;
+        padding-top: 3rem;
+    }
+    .menu-active .header-content nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+    }
+    .menu-active .header-content nav a {
+        margin-top: 10rem;
+    }
+    .menu-active .signin-block {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        width: 40%;
+        justify-self: center;
+        margin-top: 10rem;
+    }
+    .about-content {
+        width: 90% !important;
+    }
+    .rules-content {
+        width: 90% !important;
+    }
+    .wrapper {
+        width: 90% !important;
+    }
+    .sign-content {
+        width: 90% !important;
+    }
+    .product-content {
+        width: 90% !important;
+        flex-wrap: wrap;
+    }
+    .product-content img {
+        width: 100% !important;
+        margin-bottom: 2rem !important;
+    }
+    .product-content .product-item {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-content h2 {
+        text-align: center;
+    }
+    form {
+        width: 100% !important;
+    }
+}

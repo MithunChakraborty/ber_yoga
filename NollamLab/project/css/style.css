@@ -1,0 +1,428 @@
+html {
+  font-size: 10px;
+  font-family: 'SFProText';
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 120rem;
+  justify-content: center;
+  height: 8rem;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  box-shadow: 0px 0px 7px 1px #cccccc;
+  transition: 0.4s;
+}
+header .header-content {
+  display: grid;
+  grid-template-rows: 4rem;
+  grid-template-columns: 8rem 32rem 10rem;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-content .logo {
+  background: url('../icon/logo.svg');
+  background-size: cover;
+  height: 3.7rem;
+}
+header .header-content nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-items: center;
+}
+header .header-content nav a {
+  font-size: 2rem;
+  color: #1f0000;
+  font-weight: bold;
+}
+header .header-content .signin-block {
+  font-size: 2rem;
+  color: #1f0000;
+  font-weight: lighter;
+  border: 1px solid #1f000042;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  height: 3.5rem;
+  align-items: center;
+  transition: 0.4s;
+}
+header .header-content .signin-block:hover {
+  background-color: #1f0000;
+  color: #ffffff;
+}
+header .header-content .menu-btn {
+  display: none;
+}
+header .header-content .menu-btn-close {
+  display: none;
+}
+.grid {
+  margin-top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 25.8rem;
+  /* 74.2rem */
+  justify-items: center;
+}
+.grid .content {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.grid .content main {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+}
+.grid .content main .slider-btn {
+  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 10rem;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.4s;
+  cursor: pointer;
+  outline: none;
+}
+.grid .content main .slider-btn:hover {
+  background-color: #d3cfcf;
+  opacity: 0.5;
+}
+.grid .content main .slider-btn .btn {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.grid .content main .slider-btn .btn .line-top {
+  background: rgba(230, 230, 230, 0.692);
+  width: 6rem;
+  height: 0.4rem;
+  transform: rotate(-45deg);
+  margin-top: 2.7rem;
+}
+.grid .content main .slider-btn .btn .line-bottom {
+  background: rgba(230, 230, 230, 0.692);
+  width: 6rem;
+  height: 0.4rem;
+  transform: rotate(45deg);
+  margin-bottom: 2.7rem;
+}
+.grid .content main #slider-btn-left {
+  left: 0;
+}
+.grid .content main #slider-btn-right {
+  right: 0;
+}
+.grid .content main #slider-btn-right .btn {
+  transform: rotate(180deg);
+  align-items: center;
+}
+.grid .content main .slider {
+  width: 200vw;
+  height: 74.2rem;
+  display: flex;
+  /*transform: translateX(-50%);*/
+  transition: 0.4s;
+}
+.grid .content main .slider .slide {
+  width: 100vw;
+  height: 74.2rem;
+}
+.grid .content main .slider #slide1 {
+  background: url('../img/main1.png') right;
+  background-size: cover;
+}
+.grid .content main .slider #slide2 {
+  background: url('../img/main2.png') right;
+  background-size: cover;
+}
+.grid .content .container {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.grid .content .container .title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+.grid .content .container .wrapper {
+  width: 80%;
+  /* repeat(auto-fit, ) */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 35rem);
+  grid-auto-rows: 57.6rem;
+  grid-gap: 2rem 2rem;
+  justify-content: center;
+  /* 576 350 */
+}
+.grid .content .container .wrapper .wrapper-item {
+  transition: 0.4s;
+  background-color: #fff;
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid .content .container .wrapper .wrapper-item img {
+  width: 70%;
+}
+.grid .content .container .wrapper .wrapper-item h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  color: #1f0000;
+}
+.grid .content .container .wrapper .wrapper-item p {
+  color: #1f0000;
+  font-size: 1.8rem;
+}
+.grid .content .container .wrapper .wrapper-item button {
+  cursor: pointer;
+  background-color: #ff773c;
+  font-size: 2rem;
+  border: none;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.5rem 4rem;
+  transition: 0.4s;
+}
+.grid .content .container .wrapper .wrapper-item button:hover {
+  background-color: #1f0000;
+}
+.grid .content .container .wrapper .wrapper-item:hover {
+  background-color: #f7f7f7;
+}
+.grid .about-content {
+  width: 120rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+.grid .about-content .about-item {
+  text-align: center;
+}
+.grid .about-content .about-item h2 {
+  font-size: 4rem;
+  color: #1f0000;
+}
+.grid .about-content .about-item h3 {
+  font-size: 3.4rem;
+}
+.grid .about-content .about-item p {
+  font-size: 2.3rem;
+}
+.grid .rules-content {
+  width: 120rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+}
+.grid .rules-content h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: #1f0000;
+}
+.grid .rules-content p {
+  font-size: 2.3rem;
+}
+.grid .sign-content {
+  width: 120rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid .sign-content h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: #1f0000;
+  margin-bottom: 7rem;
+}
+.grid .sign-content form {
+  width: 60rem;
+  display: flex;
+  flex-direction: column;
+}
+.grid .sign-content form input {
+  border: none;
+  border: 1px solid #b4b4b4;
+  border-radius: 0.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  padding: 2rem 2rem;
+  letter-spacing: 0.1rem;
+}
+.grid .sign-content form input.input-btn {
+  font-size: 2.5rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: rgba(22, 9, 46, 0.575);
+  transition: 0.4s;
+}
+.grid .sign-content form input.input-btn:hover {
+  background-color: #1f0000;
+}
+.grid .sign-content form a {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: rgba(22, 9, 46, 0.575);
+  transition: 0.4s;
+}
+.grid .sign-content form a:hover {
+  color: #1f0000;
+}
+.grid .product-content {
+  width: 130rem;
+  display: flex;
+}
+.grid .product-content img {
+  width: 50%;
+  margin-bottom: 30rem;
+}
+.grid .product-content .product-item {
+  letter-spacing: 0.1rem;
+  padding-top: 3rem;
+  width: 50%;
+}
+.grid .product-content .product-item h2 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #1f0000;
+}
+.grid .product-content .product-item .price {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-top: 10rem;
+  color: rgba(22, 9, 46, 0.575);
+}
+.grid .product-content .product-item section {
+  display: flex;
+}
+.grid .product-content .product-item section button#desc-btn,
+.grid .product-content .product-item section button#comp-btn {
+  color: rgba(22, 9, 46, 0.575);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  display: block;
+  padding: 2rem 5rem;
+  border-bottom: 0.1rem solid #b4b4b4;
+  transition: 0.4s;
+  background-color: #fff;
+  border-radius: 0%;
+  outline: none;
+}
+.grid .product-content .product-item section button#desc-btn:hover,
+.grid .product-content .product-item section button#comp-btn:hover {
+  color: #1f0000;
+}
+.grid .product-content .product-item section .product-btn-active {
+  border-bottom-color: #ff773c !important;
+}
+.grid .product-content .product-item .product-text-active {
+  display: block !important;
+}
+.grid .product-content .product-item .product-text-nonactive {
+  display: none !important;
+}
+.grid .product-content .product-item p {
+  font-size: 2rem;
+  line-height: 3.3rem;
+  transition: 0.4s;
+}
+.grid .product-content .product-item div {
+  display: flex;
+}
+.grid .product-content .product-item div p {
+  margin-right: 2rem;
+}
+.grid .product-content .product-item div p:first-child {
+  color: #9c9c9c;
+}
+.grid .product-content .product-item button {
+  border: none;
+  letter-spacing: 0.2rem;
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 2rem 5rem;
+  background-color: #ff773c;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.grid .product-content .product-item button:hover {
+  background-color: #1f0000;
+}
+.grid footer {
+  border-top: 1px solid rgba(158, 158, 158, 0.644);
+  display: flex;
+  justify-content: center;
+}
+.grid footer .footer-content {
+  width: 120rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-auto-rows: 12.9rem;
+}
+.grid footer .footer-content div:nth-child(2) {
+  justify-self: end;
+}
+.grid footer .footer-content div:nth-child(4) {
+  justify-self: start;
+}
+.grid footer .footer-content p:first-child {
+  justify-self: end;
+}
+.grid footer .footer-content p {
+  color: #5a5a5a;
+  font-size: 2.5rem;
+}
+.grid footer .footer-content .card {
+  width: 6rem;
+  height: 2.5rem;
+}
+.grid footer .footer-content #visa {
+  background: url('../icon/visa_PNG4.png');
+  background-size: cover;
+}
+.grid footer .footer-content #master {
+  background: url('../icon/MasterCard_early_1990s_logo.png');
+  background-size: cover;
+  width: 4.3rem;
+}
+.grid footer .footer-content #mir {
+  background: url('../icon/mir.png');
+  background-size: cover;
+  width: 9rem;
+}
+.grid footer .footer-content a {
+  color: #5a5a5a;
+  font-size: 2.3rem;
+}

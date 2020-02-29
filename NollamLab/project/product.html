@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="shortcut icon" href="icon/favicon.png" type="image/png">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content" id="header-content">
+            <a href="index.html" class="logo"></a>
+            <a id="menu-btn" class="menu-btn btn-active" href="#">
+                <img src="icon/menu-button-of-three-horizontal-lines.png" alt="">
+            </a>
+            <a id="menu-btn-close" class="menu-btn-close" href="#">
+                <img src="icon/close.png" alt="">
+            </a>
+            <nav id="nav" class="hidden-mobile">
+                <a href="index.html#hair">ВОЛОСЫ</a>
+                <a href="index.html#face">ЛИЦО</a>
+                <a href="index.html#body">ТЕЛО</a>
+            </nav>
+            <a class="signin-block hidden-mobile" id="signin-block" href="signin.html">Войти</a>
+        </div>
+    </header>
+    <div class="grid">
+        <div class="product-content">
+            <img src="img/1.png" alt="">
+            <div class="product-item">
+                <h2>БЕССУЛЬФАТНЫЙ ШАМПУНЬ ДЛЯ НОРМАЛЬНЫХ ВОЛОС</h2>
+                <p class="price">792 руб.</p>
+                <section>
+                    <button class="product-btn-active" id="desc-btn">Описание</button>
+                    <button id="comp-btn">Состав</button>
+                </section>
+                <p id="desc-text" class="product-text-active">
+                    Бессульфатный шампунь для нормальной кожи головы с комплексом от выпадения волос эффективно и деликатно очищает волосы и кожу головы, оказывает увлажняющее и тонизирующее действие на кожу головы и волосы. Шампунь содержит 17 натуральных экстрактов восточных лекарственных трав.
+
+Масло из семян рапса укрепляет структуру волос, обладает заживляющим и увлажняющим действием. Экстракты алоэ вера и коптиса японского интенсивно увлажняет кожу головы, устраняя ощущение стянутости и зуда, тонизирует и повышает эластичность кожи головы.
+
+                </p>
+                <p id="comp-text" class="product-text-nonactive">
+                    Water, Panax Ginseng Root Extract, Cocamidopropyl Betaine, Sodium C14-16 Olefin Sulfonate, Sodium Lauroyl Methylaminopropionate, Coptis Japonica Extract, Fragrance, Cocamide MEA, Polyquaternium-22, Phenoxyethanol, Lactic Acid, Betaine, Panthenol, Salicylic Acid, Menthol, Brassica Napus Seed Oil, Houttuynia Cordata Extract, Niacinamide, Buthylene Glycol, Ginkgo Biloba Leaf Extract, Dipotassium Glycyrrhizate, Disodium EDTA, Ganoderma Lucidum (Mushroom) Extract, Lavandula Angustifolia (Lavender) Flower Water, Citrus Paradisi (Grapefruit) Fruit Extract, Citrus Limon (Lemon) Fruit Extract, Pinus Sylvestris Cone Extract, Alcohol, Artemisia Vulgaris Extract, Aloe Barbadensis Leaf Extract, Pyrus Malus (Apple) Fruit Extract, Calendula Officinalis Extract, Coix Lacryma-Jobi Ma-Yuen Seed Extract, Rosmarinus Officinalis (Rosemary) Extract, Salvia Officinalis (Sage) Extract
+                </p>
+                <div>
+                    <p>Объем:</p>
+                    <p>300 мл</p>
+                </div>
+                <div>
+                    <p>Страна производитель:</p>
+                    <p>Южная Корея</p>
+                </div>
+                <button>ПРИОБРЕСТИ</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <p>Мы принимаем к оплате</p>
+                <div class="card" id="visa"></div>
+                <div class="card" id="master"></div>
+                <div class="card" id="mir"></div>
+                <a href="privacy.html">Политика конфиденциальности</a>
+                <a href="rules.html">Правила оплаты</a>
+                <a href="about.html">О нас</a>
+                <a href="#">8 800 55-64-23</a>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
