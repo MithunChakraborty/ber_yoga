@@ -29,8 +29,8 @@ main {
   grid-area: main;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (108rem)[3];
-      grid-template-rows: repeat(3, 108rem);
+  -ms-grid-rows: (83rem)[3];
+      grid-template-rows: repeat(3, 83rem);
 }
 
 main #first_section {
@@ -39,6 +39,8 @@ main #first_section {
   background: url(../img/back_1_sect.png) center;
   background-size: cover;
   color: #DEC58C;
+  -ms-grid-columns: minmax(auto, 98%);
+      grid-template-columns: minmax(auto, 98%);
 }
 
 main #first_section .wrapper {
@@ -68,8 +70,8 @@ main #first_section .wrapper .logo-item {
 main #first_section .wrapper .logo-item .address-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr;
-      grid-template-columns: auto 1fr;
+  -ms-grid-columns: minmax(3rem, auto) 28rem;
+      grid-template-columns: minmax(3rem, auto) 28rem;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -81,14 +83,15 @@ main #first_section .wrapper .logo-item .address-item img {
   height: 4.4rem;
   -webkit-box-shadow: 0 0 0 rgba(34, 34, 31, 0.75);
           box-shadow: 0 0 0 rgba(34, 34, 31, 0.75);
-  background-color: main-button-color;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 main #first_section .wrapper .logo-item .address-item p {
   color: #DEC58C;
   font-size: 2.2rem;
   font-weight: 400;
-  letter-spacing: 0.022rem;
+  letter-spacing: 0rem;
 }
 
 main #first_section .wrapper .logo-item .logo {
@@ -107,12 +110,13 @@ main #first_section .wrapper .logo-item .logo img {
 main #first_section .wrapper .logo-item .contact-item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1fr 1fr;
-      grid-template-columns: auto 1fr 1fr;
+  -ms-grid-columns: auto minmax(14rem, 1fr) minmax(20.7rem, auto);
+      grid-template-columns: auto minmax(14rem, 1fr) minmax(20.7rem, auto);
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 1rem;
 }
 
 main #first_section .wrapper .logo-item .contact-item a img {
@@ -129,14 +133,14 @@ main #first_section .wrapper .logo-item .contact-item h5 {
 
 main #first_section .wrapper .logo-item .contact-item button {
   cursor: pointer;
-  width: 22.9rem;
-  height: 4.7rem;
   border-radius: 0.5rem;
   border: 0.3rem solid #E1CB89;
   background-color: transparent;
   font-size: 2.2rem;
-  font-weight: 400;
+  font-weight: 500;
   color: #DEC58C;
+  padding: 1rem 2rem;
+  letter-spacing: 0rem;
 }
 
 main #first_section .wrapper .main-text {
@@ -153,8 +157,8 @@ main #first_section .wrapper .main-text h2 {
   font-family: "Romul";
   text-shadow: 0.5rem 0.8rem 0.7rem rgba(0, 0, 0, 0.6), 0 0 0 rgba(34, 34, 31, 0.75);
   font-size: 7rem;
-  font-weight: 400;
-  line-height: 10rem;
+  font-weight: 300;
+  line-height: 9.5rem;
   text-transform: uppercase;
   letter-spacing: 0.105rem;
   text-align: center;
@@ -166,13 +170,14 @@ main #first_section .wrapper .main-text .line {
   background-color: #E1CB89;
   opacity: .5;
   width: 121.6rem;
-  height: 0.2rem;
+  height: 0.1rem;
 }
 
 main #first_section .wrapper .main-text p {
   text-shadow: 0.5rem 0.8rem 0.7rem rgba(0, 0, 0, 0.6), 0 0 0 rgba(34, 34, 31, 0.75);
   font-size: 2.4rem;
   font-weight: 400;
+  letter-spacing: 0.07rem;
 }
 
 main #first_section .wrapper .main-btn {

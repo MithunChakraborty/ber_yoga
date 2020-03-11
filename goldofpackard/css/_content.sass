@@ -1,12 +1,13 @@
 main
     grid-area: main
     display: grid
-    grid-template-rows: repeat(3, 108rem)
+    grid-template-rows: repeat(3, 83rem)
     #first_section
         display: grid
         background: url(../img/back_1_sect.png) center
         background-size: cover 
         color: $main-font-color
+        grid-template-columns: minmax(auto, 98%)
         .wrapper
             @extend %wrap
             grid-template-rows: 23rem auto auto
@@ -23,19 +24,19 @@ main
                 grid-column-gap: 20rem
                 .address-item
                     display: grid
-                    grid-template-columns: auto 1fr
+                    grid-template-columns: minmax(3rem, auto) 28rem
                     justify-items: center
                     align-items: center
                     img
                         width: 3rem
                         height: 4.4rem
                         box-shadow: 0 0 0 rgba(34, 34, 31, 0.75)
-                        background-color: main-button-color
+                        justify-self: end
                     p
                         color: $main-font-color
                         font-size: 2.2rem
                         font-weight: 400
-                        letter-spacing: 0.022rem
+                        letter-spacing: 0rem
                 .logo
                     justify-self: center
                     align-self: center
@@ -44,9 +45,10 @@ main
                         height: 8.8rem
                 .contact-item
                     display: grid
-                    grid-template-columns: auto 1fr 1fr
+                    grid-template-columns: auto minmax(14rem, 1fr) minmax(20.7rem, auto)
                     justify-items: center
                     align-items: center
+                    padding-bottom: 1rem
                     a                      
                         img
                             width: 4.1rem
@@ -57,14 +59,14 @@ main
                         font-weight: 400
                     button
                         cursor: pointer
-                        width: 22.9rem
-                        height: 4.7rem
                         border-radius: 0.5rem
                         border: 0.3rem solid $main-button-color
                         background-color: transparent
                         font-size: 2.2rem
-                        font-weight: 400
+                        font-weight: 500
                         color: $main-font-color
+                        padding: 1rem 2rem
+                        letter-spacing: 0rem
                         
             .main-text
                 display: grid
@@ -75,8 +77,8 @@ main
                     font-family: $main-h-font
                     text-shadow: 0.5rem 0.8rem 0.7rem rgba(0, 0, 0, 0.6), 0 0 0 rgba(34, 34, 31, 0.75)
                     font-size: 7rem
-                    font-weight: 400
-                    line-height: 10rem
+                    font-weight: 300
+                    line-height: 9.5rem
                     text-transform: uppercase
                     letter-spacing: 0.105rem
                     text-align: center
@@ -86,11 +88,12 @@ main
                     background-color: $main-button-color
                     opacity: .5
                     width: 121.6rem
-                    height: 0.2rem
+                    height: 0.1rem
                 p
                     text-shadow: 0.5rem 0.8rem 0.7rem rgba(0, 0, 0, 0.6), 0 0 0 rgba(34, 34, 31, 0.75)
                     font-size: 2.4rem
-                    font-weight: 400
+                    font-weight: 400 
+                    letter-spacing: 0.07rem
             .main-btn
                 display: grid
                 justify-items: center
