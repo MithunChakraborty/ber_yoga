@@ -1,0 +1,19 @@
+$main-button-color: #E1CB89
+$main-font-color: #DEC58C
+$main-h-font: "Romul"
+$main-p-font: "Merriweather"
+%wrap
+    display: grid
+html
+    font-size: 10px
+body
+    display: grid
+    grid-template-rows: 0rem auto 0rem
+    grid-template-areas: "header" "main" "footer"
+@import reset
+@import header
+@import content
+@import footer
+@media (max-width: 1400px)
+    html
+        font-size: 7px
