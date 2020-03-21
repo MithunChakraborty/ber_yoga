@@ -1,19 +1,12 @@
-$main-button-color: #E1CB89
-$main-font-color: #DEC58C
-$main-h-font: "Romul"
-$main-p-font: "Merriweather"
-%wrap
-    display: grid
+$h_font: "Romul"
+$p_font: "Merriweather"
 html
     font-size: 10px
 body
-    display: grid
-    grid-template-rows: 0rem auto 0rem
-    grid-template-areas: "header" "main" "footer"
     background: url(../img/so-white.png)
 @import reset
 @import header
-@import content
+@import first
 @import footer
-@import mobile
 @import media
+@import mobile
