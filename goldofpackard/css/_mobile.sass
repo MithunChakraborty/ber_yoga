@@ -5,6 +5,51 @@
     html
         body
             main
+                header
+                    background-color: #212121
+                    > .container
+                        +reset
+                        flex-direction: column
+                        > div
+                            padding-top: 3rem
+                            padding-bottom: 1.5rem
+                            justify-content: space-around
+                            > a
+                                > img
+                                    width: 24.1rem
+                                    height: 4.4rem
+                            .mobile_menu_enter
+                                cursor: pointer
+                                display: block
+                                background: url("../icon/menu.png") center
+                                background-size: contain
+                                border: none
+                                width: 4.8rem
+                                height: 3.5rem
+                                //margin-left: 5rem
+                            .mobile_menu_exit
+                                cursor: pointer
+                                border: none
+                                width: 4rem
+                                height: 4rem
+                                background: url("../icon/menu_exit.png") center
+                                background-size: contain
+                            #mobile_exit
+                                display: none
+                        > nav
+                            display: none
+                            font-size: 2rem
+                            font-weight: 400
+                            letter-spacing: 0.03rem
+                            width: 100%
+                            flex-direction: column
+                            > a
+                                color: #e5d187
+                        > .contact
+                            display: none
+                            > button
+                                > img
+                            > p
                 #first_section
                     *
                         +reset
@@ -65,7 +110,7 @@
                                     display: flex
                                     justify-content: flex-end
                                     flex: 1
-                                    #mobile_menu_enter
+                                    .mobile_menu_enter
                                         cursor: pointer
                                         display: block
                                         background: url("../icon/menu.png") center
@@ -74,7 +119,7 @@
                                         width: 4.8rem
                                         height: 3.5rem
                                         //margin-left: 5rem
-                                    #mobile_menu_exit
+                                    .mobile_menu_exit
                                         cursor: pointer
                                         border: none
                                         width: 4rem
