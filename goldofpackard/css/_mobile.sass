@@ -6,12 +6,14 @@
         body
             main
                 header
-                    background-color: #212121
+                    display: flex
+                    background-color: #1d110d
+                    box-shadow: 0.2rem 0.1rem 0.5rem 0.1rem #160b07
                     > .container
                         +reset
                         flex-direction: column
                         > div
-                            padding-top: 3rem
+                            padding-top: 2.5rem
                             padding-bottom: 1.5rem
                             justify-content: space-around
                             > a
@@ -34,6 +36,8 @@
                                 height: 4rem
                                 background: url("../icon/menu_exit.png") center
                                 background-size: contain
+                                margin-right: 0.4rem
+                                margin-left: 0.4rem
                             #mobile_exit
                                 display: none
                         > nav
@@ -43,6 +47,8 @@
                             letter-spacing: 0.03rem
                             width: 100%
                             flex-direction: column
+                            transition: 0.4s ease
+                            height: 90%
                             > a
                                 color: #e5d187
                         > .contact
@@ -113,8 +119,8 @@
                                     .mobile_menu_enter
                                         cursor: pointer
                                         display: block
-                                        background: url("../icon/menu.png") center
-                                        background-size: contain
+                                        // background: url("../icon/menu.png") center
+                                        // background-size: contain
                                         border: none
                                         width: 4.8rem
                                         height: 3.5rem
@@ -124,8 +130,8 @@
                                         border: none
                                         width: 4rem
                                         height: 4rem
-                                        background: url("../icon/menu_exit.png") center
-                                        background-size: contain
+                                        // background: url("../icon/menu_exit.png") center
+                                        // background-size: contain
                         > .content
                             width: 100%
                             > h3
@@ -189,6 +195,18 @@
                                     height: 3rem
                                     left: -2rem
                                     bottom: 2rem
+                    > .tomato
+                        display: none
+                    > .pepper
+                        display: none
+                    > .peppers
+                        display: none
+                    > .peppers1_mobile
+                        display: block
+                        z-index: -1
+                    > .peppers2_mobile
+                        display: block
+                        z-index: -1
 @media (min-width: 551px) and (max-width: 929px)
     html
         font-size: 13px  

@@ -50,11 +50,21 @@ header > .container > div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 1rem;
+  z-index: 5;
+}
+
+header > .container > div > a {
+  height: auto;
 }
 
 header > .container > div > a > img {
   width: 24.9rem;
   height: 5.3rem;
+}
+
+header > .container > div > button {
+  display: none;
 }
 
 header > .container > nav {
@@ -69,6 +79,8 @@ header > .container > nav {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 118rem;
+  overflow: hidden;
+  z-index: 2;
 }
 
 header > .container > nav > a {
@@ -90,15 +102,20 @@ header > .container > .contact {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin-bottom: 1rem;
 }
 
 header > .container > .contact > button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: none;
   background: transparent;
   cursor: pointer;
   width: 3.2rem;
   height: 2.96rem;
   padding: 0;
+  margin-left: 8rem;
 }
 
 header > .container > .contact > button > img {
@@ -110,6 +127,7 @@ header > .container > .contact > p {
   color: #33270d;
   font-size: 3rem;
   font-weight: 400;
+  margin-right: 2rem;
 }
 
 #first_section {
@@ -327,6 +345,8 @@ header > .container > .contact > p {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Merriweather";
+  position: relative;
+  overflow: hidden;
 }
 
 #second_section > .container {
@@ -339,6 +359,7 @@ header > .container > .contact > p {
           flex-direction: column;
   width: 118rem;
   margin-top: 6.2rem;
+  position: relative;
 }
 
 #second_section > .container > .gallery_wrapper {
@@ -406,6 +427,58 @@ header > .container > .contact > p {
   background-size: contain;
 }
 
+#second_section > .tomato {
+  width: 8.7rem;
+  height: 8.6rem;
+  left: 1.8rem;
+  top: 16rem;
+  background: url("../icon/second-tomato.png") center;
+  background-size: contain;
+  position: absolute;
+}
+
+#second_section > .pepper {
+  width: 10.7rem;
+  height: 8.4rem;
+  left: 7.2rem;
+  top: 39rem;
+  background: url("../icon/second-pepper.png") center;
+  background-size: contain;
+  position: absolute;
+}
+
+#second_section > .peppers {
+  width: 30.8rem;
+  height: 34.4rem;
+  right: -4rem;
+  top: 19.2rem;
+  background: url("../icon/second-Peppers.png") center;
+  background-size: contain;
+  position: absolute;
+}
+
+#second_section > .peppers1_mobile {
+  display: none;
+  width: 9.5rem;
+  height: 15.4rem;
+  left: 0;
+  top: 53.7rem;
+  background: url("../icon/second-Peppers1.png") center;
+  background-size: contain;
+  position: absolute;
+}
+
+#second_section > .peppers2_mobile {
+  display: none;
+  width: 14.2rem;
+  height: 15.8rem;
+  right: 0;
+  top: 12rem;
+  background: url("../icon/second-Peppers2.png") center;
+  background-size: contain;
+  position: absolute;
+}
+
 @media (min-width: 1921px) and (max-width: 3000px) {
   html {
     font-size: 11px;
@@ -432,7 +505,12 @@ header > .container > .contact > p {
 
 @media (min-width: 315px) and (max-width: 929px) {
   html body main header {
-    background-color: #212121;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #1d110d;
+    -webkit-box-shadow: 0.2rem 0.1rem 0.5rem 0.1rem #160b07;
+            box-shadow: 0.2rem 0.1rem 0.5rem 0.1rem #160b07;
   }
   html body main header > .container {
     padding: 0;
@@ -443,7 +521,7 @@ header > .container > .contact > p {
             flex-direction: column;
   }
   html body main header > .container > div {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-bottom: 1.5rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -468,6 +546,8 @@ header > .container > .contact > p {
     height: 4rem;
     background: url("../icon/menu_exit.png") center;
     background-size: contain;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
   }
   html body main header > .container > div #mobile_exit {
     display: none;
@@ -482,6 +562,9 @@ header > .container > .contact > p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+    height: 90%;
   }
   html body main header > .container > nav > a {
     color: #e5d187;
@@ -593,8 +676,6 @@ header > .container > .contact > p {
   html body main #first_section > .container > .logo_block > .contact > div .mobile_menu_enter {
     cursor: pointer;
     display: block;
-    background: url("../icon/menu.png") center;
-    background-size: contain;
     border: none;
     width: 4.8rem;
     height: 3.5rem;
@@ -604,8 +685,6 @@ header > .container > .contact > p {
     border: none;
     width: 4rem;
     height: 4rem;
-    background: url("../icon/menu_exit.png") center;
-    background-size: contain;
   }
   html body main #first_section > .container > .content {
     width: 100%;
@@ -691,6 +770,23 @@ header > .container > .contact > p {
     height: 3rem;
     left: -2rem;
     bottom: 2rem;
+  }
+  html body main #second_section > .tomato {
+    display: none;
+  }
+  html body main #second_section > .pepper {
+    display: none;
+  }
+  html body main #second_section > .peppers {
+    display: none;
+  }
+  html body main #second_section > .peppers1_mobile {
+    display: block;
+    z-index: -1;
+  }
+  html body main #second_section > .peppers2_mobile {
+    display: block;
+    z-index: -1;
   }
 }
 
