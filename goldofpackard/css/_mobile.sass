@@ -9,6 +9,7 @@
                     display: flex
                     background-color: #1d110d
                     box-shadow: 0.2rem 0.1rem 0.5rem 0.1rem #160b07
+                    z-index: 4
                     > .container
                         +reset
                         flex-direction: column
@@ -41,7 +42,6 @@
                             #mobile_exit
                                 display: none
                         > nav
-                            display: none
                             font-size: 2rem
                             font-weight: 400
                             letter-spacing: 0.03rem
@@ -49,6 +49,7 @@
                             flex-direction: column
                             transition: 0.4s ease
                             height: 90%
+                            display: none
                             > a
                                 color: #e5d187
                         > .contact
@@ -246,6 +247,25 @@
                                 height: 0.8rem
                                 bottom: 1.3rem
                                 right: 1.4rem
+                #third_section_continue
+                    +reset
+                    div:first-child
+                        display: none
+                    div:nth-child(2)
+                        display: none
+                    > .container
+                        +reset
+                        width: 97%
+                        border: none
+                        padding-top: 3rem
+                        > p
+                            +reset   
+                            font-size: 1.6rem
+                            font-weight: 400
+                            letter-spacing: 0.072rem
+                            line-height: 2.2rem  
+                            margin-bottom: 2.5rem    
+                #fourth_section       
 @media (min-width: 551px) and (max-width: 929px)
     html
         font-size: 13px
