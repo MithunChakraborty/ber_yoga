@@ -402,7 +402,7 @@ header > .container > .contact > p {
 #second_section > .container > .view_menu_block > button {
   cursor: pointer;
   width: 48.8rem;
-  height: 6.4rem;
+  height: 6.5rem;
   border-radius: 0.5rem;
   border: 0.4rem solid #e1cb89;
   background: transparent;
@@ -479,6 +479,111 @@ header > .container > .contact > p {
   position: absolute;
 }
 
+#third_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Merriweather";
+  background: url("../img/third-bg.png") top;
+  overflow-y: hidden;
+}
+
+#third_section > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 118rem;
+  padding-top: 6.6rem;
+  padding-bottom: 6rem;
+}
+
+#third_section > .container > h3 {
+  text-transform: uppercase;
+  font-family: "Romul";
+  text-shadow: 0.9rem 0.2rem 0.7rem rgba(0, 0, 0, 0.6), 0 0 0 rgba(34, 34, 31, 0.75);
+  color: #dec58c;
+  font-size: 6.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  text-align: center;
+}
+
+#third_section > .container > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+#third_section > .container > .wrapper > div {
+  position: relative;
+}
+
+#third_section > .container > .wrapper > div > img {
+  width: 27.1rem;
+  height: 33.7rem;
+  margin-bottom: 3.4rem;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+#third_section > .container > .wrapper > div > p {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #513623;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0.09rem;
+  top: 21rem;
+}
+
+#third_section > .container > button {
+  width: 42.1rem;
+  height: 6.4rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: 0.4rem solid #e1cb89;
+  background: transparent;
+  color: #e2dfdd;
+  font-family: "Merriweather";
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  position: relative;
+}
+
+#third_section > .container > button > div {
+  width: 2.1rem;
+  height: 1.2rem;
+  position: absolute;
+  right: 2.5rem;
+  bottom: 2rem;
+  background: url("../icon/third-btn.png") center;
+  background-size: contain;
+}
+
 @media (min-width: 1921px) and (max-width: 3000px) {
   html {
     font-size: 11px;
@@ -521,7 +626,7 @@ header > .container > .contact > p {
             flex-direction: column;
   }
   html body main header > .container > div {
-    padding-top: 2.5rem;
+    padding-top: 1.6rem;
     padding-bottom: 1.5rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -788,11 +893,70 @@ header > .container > .contact > p {
     display: block;
     z-index: -1;
   }
+  html body main #third_section {
+    padding: 0;
+    margin: 0;
+    background: url("../img/third-bg-mobile.png") top;
+  }
+  html body main #third_section > .container {
+    padding: 0;
+    margin: 0;
+    padding-top: 4.1rem;
+    padding-bottom: 3rem;
+    width: 100%;
+  }
+  html body main #third_section > .container > h3 {
+    font-size: 2.9rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  html body main #third_section > .container > .wrapper {
+    padding: 0;
+    margin: 0;
+    margin-top: 2.8rem;
+    margin-bottom: 0.6rem;
+  }
+  html body main #third_section > .container > .wrapper > div {
+    padding: 0;
+    margin: 0;
+  }
+  html body main #third_section > .container > .wrapper > div > img {
+    width: 19.4rem;
+    height: 24.1rem;
+    padding: 0;
+    margin: 0;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    margin-bottom: 1rem;
+  }
+  html body main #third_section > .container > .wrapper > div > p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    top: 14.5rem;
+  }
+  html body main #third_section > .container > button {
+    padding: 0;
+    margin: 0;
+    width: 28.6rem;
+    height: 4.4rem;
+    font-size: 2rem;
+  }
+  html body main #third_section > .container > button > div {
+    width: 1.4rem;
+    height: 0.8rem;
+    bottom: 1.3rem;
+    right: 1.4rem;
+  }
 }
 
 @media (min-width: 551px) and (max-width: 929px) {
   html {
     font-size: 13px;
+  }
+  .gallery_wrapper {
+    -ms-flex-pack: distribute   !important;
+        justify-content: space-around   !important;
   }
 }
 
@@ -821,10 +985,17 @@ header > .container > .contact > p {
 }
 
 @media (max-width: 330px) {
-  .gallery_wrapper {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important;
+  #second_section .gallery_wrapper img {
+    width: 17.28rem !important;
+    height: 16.92rem !important;
+  }
+  #third_section .wrapper > div > p {
+    top: 12rem !important;
+    font-size: 1.2rem !important;
+  }
+  #third_section .wrapper img {
+    width: 17.46rem !important;
+    height: 21.69rem !important;
   }
 }
 /*# sourceMappingURL=base.css.map */

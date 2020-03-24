@@ -13,7 +13,7 @@
                         +reset
                         flex-direction: column
                         > div
-                            padding-top: 2.5rem
+                            padding-top: 1.6rem
                             padding-bottom: 1.5rem
                             justify-content: space-around
                             > a
@@ -207,9 +207,50 @@
                     > .peppers2_mobile
                         display: block
                         z-index: -1
+                #third_section
+                    +reset
+                    background: url("../img/third-bg-mobile.png") top  
+                    > .container
+                        +reset
+                        padding-top: 4.1rem
+                        padding-bottom: 3rem
+                        width: 100%
+                        > h3
+                            font-size: 2.9rem
+                            text-align: center
+                            +reset
+                        > .wrapper
+                            +reset
+                            margin-top: 2.8rem
+                            margin-bottom: 0.6rem
+                            > div
+                                +reset
+                                > img
+                                    width: 19.4rem
+                                    height: 24.1rem
+                                    +reset
+                                    margin-left: 0.6rem
+                                    margin-right: 0.6rem
+                                    margin-bottom: 1rem
+                                > p
+                                    font-size: 1.3rem
+                                    line-height: 1.7rem
+                                    top: 14.5rem
+                        > button
+                            +reset  
+                            width: 28.6rem
+                            height: 4.4rem
+                            font-size: 2rem
+                            > div
+                                width: 1.4rem
+                                height: 0.8rem
+                                bottom: 1.3rem
+                                right: 1.4rem
 @media (min-width: 551px) and (max-width: 929px)
     html
-        font-size: 13px  
+        font-size: 13px
+    .gallery_wrapper
+        justify-content: space-around   !important
 @media (min-width: 501px) and (max-width: 550px)
     html
         font-size: 12px
@@ -224,5 +265,18 @@
         font-size: 8px
 // etc
 @media (max-width: 330px)
-    .gallery_wrapper
-        justify-content: center !important
+    #second_section
+        .gallery_wrapper
+            img
+                width: 19.2rem * 0.9 !important
+                height: 18.8rem * 0.9 !important
+
+    #third_section
+        .wrapper
+            > div
+                > p
+                    top: 12rem !important
+                    font-size: 1.2rem !important
+            img
+                width: 19.4rem * 0.9 !important
+                height: 24.1rem * 0.9 !important
