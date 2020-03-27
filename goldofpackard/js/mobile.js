@@ -8,6 +8,12 @@ var third_sign = document.getElementById("third_sign");
 var third_sec2 = document.getElementById("third_section_continue");
 var first_section = document.getElementById("first_section");
 var third_btn = document.getElementById("third_btn");
+var prev4 = document.getElementById("prev4");
+var next4 = document.getElementById("next4");
+var prev6 = document.getElementById("prev6");
+var next6 = document.getElementById("next6");
+var list4_sect = document.getElementById("images");
+var list6_sect = document.getElementById("images6");
 
 function flex_menu() {
     third_sec2.style.marginTop = `-${third_sec2.offsetHeight}px`;
@@ -35,6 +41,8 @@ function flex_menu() {
 }
 window.onload = () => {
     flex_menu();
+    list4_sect.style.transform = "translateX(0%)";
+    list6_sect.style.transform = "translateX(0%)";
 };
 window.onresize = () => {
     flex_menu();
@@ -57,6 +65,16 @@ window.addEventListener('scroll', function(event) {
     else {
     }
 });
+var list = nav.children;
+for (var j=0, child; child=list[j]; j++) {
+    child.addEventListener('click', () => {
+            menu_in.style.display = "block";
+            menu_out.style.display = "none";
+            document.body.style.overflow = 'auto';
+            nav.style.transform = "translateY(-160%)";
+            header.style.height = `7.2rem`;
+    })
+}
 // mobile menu enter
 menu_in.addEventListener(
     'click', 
@@ -91,5 +109,74 @@ third_btn.addEventListener('click', () => {
         third_sec2.style.marginTop = `-${third_sec2.offsetHeight}px`;
         third_sign.style.transform = "rotate(0deg)";
         z--;
+    }
+});
+// gallery 4 section
+var quantity_img = list4_sect.children.length;
+const slide = 100 / quantity_img;
+var count = 0;
+var wrapper_btn4 = document.getElementById("wrapper_btn4").children;
+prev4.addEventListener('click', () => {
+    if (list4_sect.style.transform != "translateX(0%)") {       
+        list4_sect.style.transform = `translateX(-${count - slide}%)`;
+        count -= slide;
+        for (var i = 0; i < wrapper_btn4.length; i++) {
+            if (wrapper_btn4[i].className == "active_btn4") {
+                wrapper_btn4[i].className = "";
+                wrapper_btn4[i - 1].className = "active_btn4";
+                break;
+            }
+        }
+    }
+});
+next4.addEventListener('click', () => {
+    if ((list4_sect.style.transform < `translateX(-${100 - slide}%)`) ||
+        (list4_sect.style.transform == "translateX(0%)")) {
+        count += slide;
+        list4_sect.style.transform = `translateX(-${count}%)`;        
+        for (var i = 0; i < wrapper_btn4.length; i++) {
+            if (wrapper_btn4[i].className == "active_btn4") {
+                wrapper_btn4[i].className = "";
+                wrapper_btn4[i + 1].className = "active_btn4";
+                break;
+            }
+        }
+    }
+});
+// gallery 6 section
+var _quantity_img = list6_sect.children.length;
+const _slide = 100 / _quantity_img;
+var _count = 0;
+var wrapper_btn6 = document.getElementById("wrapper_btn6").children;
+prev6.addEventListener('click', () => {
+    if (list6_sect.style.transform != "translateX(0%)") {       
+        list6_sect.style.transform = `translateX(-${_count - _slide}%)`;
+        _count -= _slide;
+        for (var i = 0; i < wrapper_btn6.length; i++) {
+            if (wrapper_btn6[i].className == "active_btn4") {
+                wrapper_btn6[i].className = "";
+                wrapper_btn6[i - 1].className = "active_btn4";
+                break;
+            }
+        }
+    }
+});
+var _deadline = 0;
+if (document.body.offsetWidth < 1011) 
+    _deadline = 100 - _slide;
+else
+    _deadline = 100 - _slide * 3;
+next6.addEventListener('click', () => {
+    if ((list6_sect.style.transform < `translateX(-${_deadline}%)`) ||
+        (list6_sect.style.transform == "translateX(0%)")) {
+        _count += _slide;
+        list6_sect.style.transform = `translateX(-${_count}%)`;        
+        for (var i = 0; i < wrapper_btn4.length; i++) {
+            if (wrapper_btn6[i].className == "active_btn4") {
+                wrapper_btn6[i].className = "";
+                wrapper_btn6[i + 1].className = "active_btn4";
+                break;
+            }
+        }
     }
 });

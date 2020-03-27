@@ -1,0 +1,101 @@
+#sixth_section
+    padding-top: 12rem
+    padding-bottom: 15rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    font-family: $p_font
+    position: relative
+    overflow-x: hidden
+    > h3
+        text-align: center
+        color: #d6be87
+        text-align: center
+        font-size: 6.5rem
+        font-weight: 400
+        letter-spacing: 0.1rem
+        text-shadow: 9px 2px 10px rgba(220, 199, 124, 0.48), 0 0 0 rgba(34, 34, 31, 0.75)
+        margin: 0
+        margin-bottom: 10rem
+        text-transform: uppercase
+        font-family: $h_font
+    > .sixth_left
+        position: absolute
+        width: 25.8rem
+        height: 36.9rem
+        left: 0
+        top: 22rem
+        background: url("../img/sixth_left.png") center no-repeat
+        background-size: contain
+        overflow: hidden
+    > .sixth_right
+        position: absolute
+        width: 24.4rem
+        height: 36.5rem
+        right: 0
+        bottom: 9rem
+        background: url("../img/sixth_right.png") center no-repeat
+        background-size: contain
+        overflow: hidden
+    > .container
+        display: flex
+        justify-content: center
+        align-items: center
+        #gallery6
+            display: flex
+            align-items: center
+            overflow: hidden
+            height: 68.3rem
+            width: 126.6rem
+            > .wrapper
+                display: block
+                transition: 0.4s                
+                width: inherit
+                > #images6
+                    display: inline-flex
+                    transition: 0.4s
+                    > .gallery6_item
+                        box-sizing: border-box
+                        margin-left: 1.5rem
+                        margin-right: 1.5rem
+                        width: 39.2rem
+                        height: 68.3rem
+                        background: url("../img/sixth_default.png") center
+                        background-size: contain
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        > img
+                            width: 29rem
+                            height: 58.4rem
+                            margin-right: 0.5rem
+                            margin-top: 0.8rem
+                            border-radius: 1.5rem
+        #prev6
+            width: 3.7rem
+            height: 6.7rem
+            cursor: pointer
+            border: 0
+            background: url("../icon/gallery4_btn.png") center
+            background-size: contain
+            transform: rotate(180deg)
+        #next6
+            width: 3.7rem
+            height: 6.7rem
+            cursor: pointer !important
+            border: 0
+            background: url("../icon/gallery4_btn.png") center
+            background-size: contain 
+    #wrapper_btn6
+        //display: inline-block
+        display: none
+        > button
+            background: #d8d7d7
+            margin-right: 1rem
+            margin-left: 1rem
+            z-index: 8
+            border: none
+            width: 8px
+            height: 10px
+            border-radius: 50%
+            cursor: pointer

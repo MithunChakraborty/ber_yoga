@@ -15,6 +15,10 @@ p {
   padding: 0;
 }
 
+button {
+  outline: none;
+}
+
 header {
   display: none;
   background-color: #fff;
@@ -36,8 +40,8 @@ header > .container {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding-top: 3.6rem;
-  padding-bottom: 2.9rem;
+  padding-top: 2.8rem;
+  padding-bottom: 2.3rem;
 }
 
 header > .container > div {
@@ -613,6 +617,7 @@ header > .container > .contact > p {
   background-size: contain;
   left: 0;
   top: 4rem;
+  overflow: hidden;
 }
 
 #third_section_continue div:nth-child(2) {
@@ -623,6 +628,7 @@ header > .container > .contact > p {
   background-size: contain;
   right: 0;
   bottom: 0;
+  overflow: hidden;
 }
 
 #third_section_continue > .container {
@@ -659,6 +665,7 @@ header > .container > .contact > p {
 
 #fourth_section {
   padding-top: 11.5rem;
+  padding-bottom: 6.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,6 +676,9 @@ header > .container > .contact > p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Merriweather";
+  position: relative;
+  overflow-x: hidden;
 }
 
 #fourth_section > h3 {
@@ -681,6 +691,472 @@ header > .container > .contact > p {
   font-size: 6.5rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
+}
+
+#fourth_section > .fourth_item_left {
+  position: absolute;
+  width: 26.7rem;
+  height: 19.9rem;
+  background: url("../icon/fourth_left.png") center;
+  background-size: contain;
+  left: -7rem;
+  top: 25rem;
+}
+
+#fourth_section > .fourth_item_right {
+  position: absolute;
+  width: 20.8rem;
+  height: 16.3rem;
+  background: url("../icon/fourth_right.png") center;
+  background-size: contain;
+  right: -3rem;
+  bottom: 7rem;
+}
+
+#fourth_section > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fourth_section > .container #gallery4 {
+  width: 119.6rem;
+  height: 62.8rem;
+  border: 0.4rem solid #e3c880;
+  margin-bottom: 3.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+#fourth_section > .container #gallery4 > .wrapper {
+  display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: inherit;
+}
+
+#fourth_section > .container #gallery4 > .wrapper > #images {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#fourth_section > .container #gallery4 > .wrapper > #images > div {
+  position: relative;
+}
+
+#fourth_section > .container #gallery4 > .wrapper > #images > div > .text-gallery {
+  position: absolute;
+  width: 116.6rem;
+  height: 59.6rem;
+  left: 0;
+  top: 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#fourth_section > .container #gallery4 > .wrapper > #images > div > .text-gallery > div {
+  text-align: center;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fourth_section > .container #gallery4 > .wrapper > #images > div > .text-gallery > div > p {
+  text-shadow: 9px 2px 9px rgba(46, 46, 46, 0.63);
+  color: #e3c880;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 4.65rem;
+  letter-spacing: 0.36rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+#fourth_section > .container #gallery4 > .wrapper > #images > div > .text-gallery > div > p > span {
+  color: #ffffff;
+}
+
+#fourth_section > .container #gallery4 > .wrapper > #images > div > .text-gallery > div > .line {
+  background-color: #e3c880;
+  height: 0.2rem;
+  width: 90%;
+}
+
+#fourth_section > .container #gallery4 > .wrapper > #images > div > .gallery4_item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 116.6rem;
+  height: 59.6rem;
+}
+
+#fourth_section > .container #prev4 {
+  width: 3.7rem;
+  height: 6.7rem;
+  cursor: pointer;
+  border: 0;
+  background: url("../icon/gallery4_btn.png") center;
+  background-size: contain;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#fourth_section > .container #next4 {
+  width: 3.7rem;
+  height: 6.7rem;
+  cursor: pointer !important;
+  border: 0;
+  background: url("../icon/gallery4_btn.png") center;
+  background-size: contain;
+}
+
+#fourth_section #wrapper_btn4 {
+  display: inline-block;
+}
+
+#fourth_section #wrapper_btn4 > button {
+  background: #d8d7d7;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  z-index: 8;
+  border: none;
+  width: 8px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active_btn4 {
+  background: #9a9a9a !important;
+}
+
+#fifth_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Merriweather";
+  background: url("../img/fifth_bg.png") top;
+  overflow-y: hidden;
+  padding-top: 8.2rem;
+}
+
+#fifth_section > h3 {
+  font-family: "Romul";
+  margin-bottom: 9.2rem;
+  text-transform: uppercase;
+  text-shadow: 9px 2px 7px rgba(0, 0, 0, 0.6), 0 0 0 rgba(34, 34, 31, 0.75);
+  color: #dec58c;
+  font-size: 6.5rem;
+  font-weight: 400;
+  margin-top: 0;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+#fifth_section > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 120rem;
+}
+
+#fifth_section > .container > .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#fifth_section > .container > .wrapper > div {
+  position: relative;
+}
+
+#fifth_section > .container > .wrapper > div > img {
+  width: 27.1rem;
+  height: 39.3rem;
+  margin-bottom: 6rem;
+  margin-left: 1.3rem;
+  margin-right: 1.3rem;
+}
+
+#fifth_section > .container > .wrapper > div > p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  position: absolute;
+  text-align: center;
+  color: #513623;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0rem;
+  top: 25rem;
+}
+
+#fifth_section > .container > .wrapper > div > div {
+  width: 5.4rem;
+  height: 5.4rem;
+  position: absolute;
+  -webkit-box-shadow: 4px 1px 9px 1px rgba(34, 30, 17, 0.55);
+          box-shadow: 4px 1px 9px 1px rgba(34, 30, 17, 0.55);
+  border: 0.1rem solid #c3aa70;
+  border-radius: 50%;
+  background-color: #dec384;
+  left: -0.3rem;
+  top: -1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#fifth_section > .container > .wrapper > div > div > p {
+  font-size: 3.3rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+#fifth_section > .container > button {
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 8rem;
+  border: none;
+  width: 64.2rem;
+  height: 10rem;
+  -webkit-box-shadow: 0 0 2.4rem 0.1rem rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08);
+          box-shadow: 0 0 2.4rem 0.1rem rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background-color: #e1cb89;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e3cd70), color-stop(56%, #e0bf75), color-stop(57%, #e0bf75), to(#ebc97c));
+  background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: #513623;
+}
+
+#sixth_section {
+  padding-top: 12rem;
+  padding-bottom: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Merriweather";
+  position: relative;
+  overflow-x: hidden;
+}
+
+#sixth_section > h3 {
+  text-align: center;
+  color: #d6be87;
+  text-align: center;
+  font-size: 6.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  text-shadow: 9px 2px 10px rgba(220, 199, 124, 0.48), 0 0 0 rgba(34, 34, 31, 0.75);
+  margin: 0;
+  margin-bottom: 10rem;
+  text-transform: uppercase;
+  font-family: "Romul";
+}
+
+#sixth_section > .sixth_left {
+  position: absolute;
+  width: 25.8rem;
+  height: 36.9rem;
+  left: 0;
+  top: 22rem;
+  background: url("../img/sixth_left.png") center no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+#sixth_section > .sixth_right {
+  position: absolute;
+  width: 24.4rem;
+  height: 36.5rem;
+  right: 0;
+  bottom: 9rem;
+  background: url("../img/sixth_right.png") center no-repeat;
+  background-size: contain;
+  overflow: hidden;
+}
+
+#sixth_section > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sixth_section > .container #gallery6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  height: 68.3rem;
+  width: 126.6rem;
+}
+
+#sixth_section > .container #gallery6 > .wrapper {
+  display: block;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: inherit;
+}
+
+#sixth_section > .container #gallery6 > .wrapper > #images6 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#sixth_section > .container #gallery6 > .wrapper > #images6 > .gallery6_item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 39.2rem;
+  height: 68.3rem;
+  background: url("../img/sixth_default.png") center;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#sixth_section > .container #gallery6 > .wrapper > #images6 > .gallery6_item > img {
+  width: 29rem;
+  height: 58.4rem;
+  margin-right: 0.5rem;
+  margin-top: 0.8rem;
+  border-radius: 1.5rem;
+}
+
+#sixth_section > .container #prev6 {
+  width: 3.7rem;
+  height: 6.7rem;
+  cursor: pointer;
+  border: 0;
+  background: url("../icon/gallery4_btn.png") center;
+  background-size: contain;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#sixth_section > .container #next6 {
+  width: 3.7rem;
+  height: 6.7rem;
+  cursor: pointer !important;
+  border: 0;
+  background: url("../icon/gallery4_btn.png") center;
+  background-size: contain;
+}
+
+#sixth_section #wrapper_btn6 {
+  display: none;
+}
+
+#sixth_section #wrapper_btn6 > button {
+  background: #d8d7d7;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  z-index: 8;
+  border: none;
+  width: 8px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 @media (min-width: 1921px) and (max-width: 3000px) {
@@ -1074,6 +1550,199 @@ header > .container > .contact > p {
     line-height: 2.2rem;
     margin-bottom: 2.5rem;
   }
+  html body main #fourth_section {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+  html body main #fourth_section > h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.8rem;
+    font-size: 3.9rem;
+  }
+  html body main #fourth_section > .fourth_item_left {
+    display: none;
+  }
+  html body main #fourth_section > .fourth_item_right {
+    display: none;
+  }
+  html body main #fourth_section > .container #gallery4 {
+    border: none;
+    width: auto;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0;
+    margin: 0;
+  }
+  html body main #fourth_section > .container #gallery4 > .wrapper {
+    width: 35.815rem;
+    height: 18.43rem;
+  }
+  html body main #fourth_section > .container #gallery4 > .wrapper > #images > div > .text-gallery {
+    padding: 0;
+    margin: 0;
+    width: 37.7rem;
+    height: 19.4rem;
+  }
+  html body main #fourth_section > .container #gallery4 > .wrapper > #images > div > .text-gallery > div > p {
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+  }
+  html body main #fourth_section > .container #gallery4 > .wrapper > #images > div > .text-gallery > div > .line {
+    height: 0.1rem;
+  }
+  html body main #fourth_section > .container #gallery4 > .wrapper > #images > div > .gallery4_item {
+    padding: 0;
+    margin: 0;
+    width: 35.815rem;
+    height: 18.43rem;
+  }
+  html body main #fourth_section > .container #prev4 {
+    width: 1.1rem;
+    height: 2.1rem;
+  }
+  html body main #fourth_section > .container #next4 {
+    width: 1.1rem;
+    height: 2.1rem;
+  }
+  html body main #fourth_section #wrapper_btn4 {
+    margin-top: 1rem;
+  }
+  html body main #fourth_section #wrapper_btn4 > button {
+    padding: 0;
+    margin: 0;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    width: 6px !important;
+    height: 6px !important;
+  }
+  html body main #fifth_section {
+    padding: 0;
+    margin: 0;
+    padding-top: 3rem;
+  }
+  html body main #fifth_section > h3 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    letter-spacing: 0.09rem;
+  }
+  html body main #fifth_section > .container {
+    width: 100%;
+  }
+  html body main #fifth_section > .container > .wrapper > div > img {
+    padding: 0;
+    margin: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2.5rem;
+    width: 18.1rem;
+    height: 26.2rem;
+  }
+  html body main #fifth_section > .container > .wrapper > div > p {
+    padding: 0;
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 1.4rem;
+    top: 15rem;
+  }
+  html body main #fifth_section > .container > .wrapper > div > div {
+    width: 3.7rem;
+    height: 3.7rem;
+  }
+  html body main #fifth_section > .container > .wrapper > div > div > p {
+    font-size: 2.3rem;
+  }
+  html body main #fifth_section > .container > button {
+    width: 28.7rem;
+    height: 5.7rem;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+  }
+  html body main #sixth_section {
+    padding: 0;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  html body main #sixth_section > h3 {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3rem;
+    text-shadow: 9px 2px 10px rgba(220, 199, 124, 0.48), 0 0 0 rgba(34, 34, 31, 0.75);
+    font-size: 2.4rem;
+    letter-spacing: 0.030rem;
+  }
+  html body main #sixth_section > .sixth_left {
+    padding: 0;
+    margin: 0;
+    width: 8.8rem;
+    height: 12.9rem;
+    top: 36rem;
+  }
+  html body main #sixth_section > .sixth_right {
+    padding: 0;
+    margin: 0;
+    width: 7.4rem;
+    height: 11.3rem;
+    bottom: 34rem;
+  }
+  html body main #sixth_section > .container {
+    padding: 0;
+    margin: 0;
+  }
+  html body main #sixth_section > .container #gallery6 {
+    width: 29.6rem;
+    height: 41.3rem;
+  }
+  html body main #sixth_section > .container #gallery6 > .wrapper > #images6 > .gallery6_item {
+    padding: 0;
+    margin: 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    width: 23.6rem;
+    height: 41.3rem;
+  }
+  html body main #sixth_section > .container #gallery6 > .wrapper > #images6 > .gallery6_item > img {
+    padding: 0;
+    margin: 0;
+    width: 17.5rem;
+    height: 35.3rem;
+  }
+  html body main #sixth_section > .container #prev6 {
+    width: 1.9rem;
+    height: 3.5rem;
+  }
+  html body main #sixth_section > .container #next6 {
+    width: 1.9rem;
+    height: 3.5rem;
+  }
+  html body main #sixth_section #wrapper_btn6 {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  html body main #sixth_section #wrapper_btn6 > button {
+    padding: 0;
+    margin: 0;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    width: 6px !important;
+    height: 6px !important;
+  }
 }
 
 @media (min-width: 551px) and (max-width: 1010px) {
@@ -1095,6 +1764,12 @@ header > .container > .contact > p {
 @media (min-width: 450px) and (max-width: 500px) {
   html {
     font-size: 11px;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 449px) {
+  html {
+    font-size: 10px;
   }
 }
 

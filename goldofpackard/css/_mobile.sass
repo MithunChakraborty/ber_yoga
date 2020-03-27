@@ -265,7 +265,155 @@
                             letter-spacing: 0.072rem
                             line-height: 2.2rem  
                             margin-bottom: 2.5rem    
-                #fourth_section       
+                #fourth_section
+                    padding-top: 5rem
+                    padding-bottom: 3rem
+                    padding-left: 0.4rem
+                    padding-right: 0.4rem
+                    > h3
+                        +reset
+                        margin-bottom: 1.8rem
+                        font-size: 3.9rem
+                    > .fourth_item_left
+                        display: none
+                    > .fourth_item_right
+                        display: none
+                    > .container
+                        #gallery4
+                            border: none
+                            width: auto
+                            height: auto
+                            justify-content: center
+                            margin-left: 0 !important
+                            margin-right: 0 !important
+                            +reset
+                            > .wrapper
+                                width: 37.7rem * 0.95
+                                height: 19.4rem * 0.95
+                                > #images
+                                    > div
+                                        > .text-gallery
+                                            +reset
+                                            width: 37.7rem
+                                            height: 19.4rem
+                                            > div
+                                                > p
+                                                    +reset
+                                                    font-size: 1.1rem
+                                                    font-weight: 400
+                                                    line-height: 1.5rem
+                                                    letter-spacing: 0
+                                                    margin-bottom: 1rem !important
+                                                    margin-top: 1rem !important
+                                                > .line
+                                                    height: 0.1rem
+                                        > .gallery4_item
+                                            +reset
+                                            width: 37.7rem * 0.95
+                                            height: 19.4rem * 0.95
+                        #prev4
+                            width: 1.1rem
+                            height: 2.1rem
+                        #next4
+                            width: 1.1rem
+                            height: 2.1rem
+                    #wrapper_btn4
+                        margin-top: 1rem
+                        > button
+                            +reset 
+                            margin-left: 0.2rem
+                            margin-right: 0.2rem
+                            width: 6px !important
+                            height: 6px !important
+                #fifth_section
+                    +reset
+                    padding-top: 3rem
+                    > h3
+                        margin-bottom: 3rem
+                        font-size: 2rem
+                        letter-spacing: 0.09rem
+                    > .container
+                        width: 100%
+                        > .wrapper
+                            > div
+                                > img
+                                    +reset
+                                    margin-left: 1rem
+                                    margin-right: 1rem
+                                    margin-bottom: 2.5rem
+                                    width: 18.1rem
+                                    height: 26.2rem
+                                > p
+                                    +reset
+                                    padding-left: 1.5rem
+                                    padding-right: 1.5rem
+                                    font-size: 1.4rem
+                                    top: 15rem
+                                > div
+                                    width: 3.7rem
+                                    height: 3.7rem
+                                    > p
+                                        font-size: 2.3rem
+                        > button
+                            width: 28.7rem
+                            height: 5.7rem
+                            font-size: 1.6rem
+                            margin-bottom: 3rem
+                #sixth_section
+                    +reset
+                    padding-top: 3rem
+                    padding-bottom: 3rem
+                    > h3
+                        +reset
+                        margin-bottom: 3rem
+                        text-shadow: 9px 2px 10px rgba(220, 199, 124, 0.48), 0 0 0 rgba(34, 34, 31, 0.75)
+                        font-size: 2.4rem
+                        letter-spacing: 0.030rem
+                    > .sixth_left
+                        +reset
+                        width: 8.8rem
+                        height: 12.9rem
+                        top: 36rem
+                    > .sixth_right
+                        +reset
+                        width: 7.4rem
+                        height: 11.3rem
+                        bottom: 34rem
+                    > .container
+                        +reset
+                        #gallery6
+                            width: 29.6rem
+                            height: 41.3rem
+                            > .wrapper
+                                > #images6
+                                    > .gallery6_item
+                                        +reset
+                                        margin-left: 3rem
+                                        margin-right: 3rem
+                                        width: 23.6rem
+                                        height: 41.3rem
+                                        > img
+                                            +reset
+                                            width: 17.5rem
+                                            height: 35.3rem
+                                            //margin-right: 0.5rem
+                                            //margin-top: 0.8rem
+                        #prev6
+                            width: 1.9rem
+                            height: 3.5rem
+                        #next6
+                            width: 1.9rem
+                            height: 3.5rem
+                    #wrapper_btn6
+                        display: inline-block
+                        +reset
+                        margin-top: 2rem
+                        > button
+                            +reset
+                            margin-left: 0.2rem
+                            margin-right: 0.2rem
+                            width: 6px !important
+                            height: 6px !important
 @media (min-width: 551px) and (max-width: 1010px)
     html
         font-size: 13px
@@ -276,7 +424,10 @@
         font-size: 12px
 @media (min-width: 450px) and (max-width: 500px)
     html
-        font-size: 11px                   
+        font-size: 11px 
+@media (min-width: 415px) and (max-width: 449px)
+    html
+        font-size: 10px                  
 @media (min-width: 370px) and (max-width: 414px)
     html
         font-size: 9px
