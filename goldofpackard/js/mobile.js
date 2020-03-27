@@ -128,6 +128,17 @@ prev4.addEventListener('click', () => {
             }
         }
     }
+    else {
+        count = 100 - slide
+        list4_sect.style.transform = `translateX(-${count}%)`;
+        for (var i = 0; i < wrapper_btn4.length; i++) {
+            if (wrapper_btn4[i].className == "active_btn4") {
+                wrapper_btn4[i].className = "";
+                wrapper_btn4[wrapper_btn4.length - 1].className = "active_btn4";
+                break;
+            }
+        }
+    }
 });
 next4.addEventListener('click', () => {
     if ((list4_sect.style.transform < `translateX(-${100 - slide}%)`) ||
@@ -142,12 +153,28 @@ next4.addEventListener('click', () => {
             }
         }
     }
+    else {
+        list4_sect.style.transform = "translateX(0%)";
+        count = 0;
+        for (var i = 0; i < wrapper_btn4.length; i++) {
+            if (wrapper_btn4[i].className == "active_btn4") {
+                wrapper_btn4[i].className = "";
+                wrapper_btn4[0].className = "active_btn4";
+                break;
+            }
+        }
+    }
 });
 // gallery 6 section
 var _quantity_img = list6_sect.children.length;
 const _slide = 100 / _quantity_img;
 var _count = 0;
 var wrapper_btn6 = document.getElementById("wrapper_btn6").children;
+var _deadline = 0;
+if (document.body.offsetWidth < 1011) 
+    _deadline = 100 - _slide;
+else
+    _deadline = 100 - _slide * 3;
 prev6.addEventListener('click', () => {
     if (list6_sect.style.transform != "translateX(0%)") {       
         list6_sect.style.transform = `translateX(-${_count - _slide}%)`;
@@ -160,21 +187,38 @@ prev6.addEventListener('click', () => {
             }
         }
     }
+    else {
+        _count = _deadline
+        list6_sect.style.transform = `translateX(-${_count}%)`;
+        for (var i = 0; i < wrapper_btn6.length; i++) {
+            if (wrapper_btn6[i].className == "active_btn4") {
+                wrapper_btn6[i].className = "";
+                wrapper_btn6[wrapper_btn6.length - 1].className = "active_btn4";
+                break;
+            }
+        }
+    }
 });
-var _deadline = 0;
-if (document.body.offsetWidth < 1011) 
-    _deadline = 100 - _slide;
-else
-    _deadline = 100 - _slide * 3;
 next6.addEventListener('click', () => {
     if ((list6_sect.style.transform < `translateX(-${_deadline}%)`) ||
         (list6_sect.style.transform == "translateX(0%)")) {
         _count += _slide;
         list6_sect.style.transform = `translateX(-${_count}%)`;        
-        for (var i = 0; i < wrapper_btn4.length; i++) {
+        for (var i = 0; i < wrapper_btn6.length; i++) {
             if (wrapper_btn6[i].className == "active_btn4") {
                 wrapper_btn6[i].className = "";
                 wrapper_btn6[i + 1].className = "active_btn4";
+                break;
+            }
+        }
+    }
+    else {
+        list6_sect.style.transform = "translateX(0%)";
+        _count = 0;
+        for (var i = 0; i < wrapper_btn6.length; i++) {
+            if (wrapper_btn6[i].className == "active_btn4") {
+                wrapper_btn6[i].className = "";
+                wrapper_btn6[0].className = "active_btn4";
                 break;
             }
         }

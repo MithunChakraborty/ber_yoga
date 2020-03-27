@@ -1120,7 +1120,7 @@ header > .container > .contact > p {
   height: 58.4rem;
   margin-right: 0.5rem;
   margin-top: 0.8rem;
-  border-radius: 1.5rem;
+  border-radius: 15px;
 }
 
 #sixth_section > .container #prev6 {
@@ -1157,6 +1157,141 @@ header > .container > .contact > p {
   height: 10px;
   border-radius: 50%;
   cursor: pointer;
+}
+
+#seventh_section {
+  font-family: "Merriweather";
+  background: url("../img/seventh_bg.png") center;
+  background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#seventh_section > .container {
+  width: 125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#seventh_section > .container > h3 {
+  margin: 0;
+  text-transform: uppercase;
+  text-shadow: 9px 2px 7px rgba(0, 0, 0, 0.6), 0 0 0 rgba(34, 34, 31, 0.75);
+  color: #dec58c;
+  font-family: "Romul";
+  font-size: 6.5rem;
+  font-weight: 400;
+  letter-spacing: 0.097rem;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+#seventh_section > .container > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#seventh_section > .container > form > div {
+  position: relative;
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+#seventh_section > .container > form > div > p {
+  text-shadow: 3px 1px 6px rgba(55, 55, 55, 0.68);
+  color: #dec58c;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.036rem;
+  margin-bottom: 2.5rem;
+  padding-left: 0.6rem;
+}
+
+#seventh_section > .container > form > div > input {
+  border: none;
+  width: 34.7rem;
+  height: 6rem;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding-left: 1.2rem;
+  color: #757473;
+  font-family: "Merriweather";
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.036rem;
+  margin-bottom: 7.5rem;
+}
+
+#seventh_section > .container > form > div > a {
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  height: 6.25rem;
+  width: 5.7rem;
+  border-radius: 0 5px 5px 0;
+  background-color: #dec58c;
+  right: 0;
+  bottom: 7.5rem;
+  z-index: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#seventh_section > .container > form > div > a > div {
+  width: 2.6rem;
+  height: 1.7rem;
+  background: url("../img/seventh_btn.png") center no-repeat;
+  background-size: contain;
+}
+
+#seventh_section > .container > form > button {
+  cursor: pointer;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  width: 44.8rem;
+  height: 10rem;
+  -webkit-box-shadow: 0 0 2.4rem 0.1rem rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08);
+          box-shadow: 0 0 2.4rem 0.1rem rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background-color: #e1cb89;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e3cd70), color-stop(56%, #e0bf75), color-stop(57%, #e0bf75), to(#ebc97c));
+  background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  color: #513623;
 }
 
 @media (min-width: 1921px) and (max-width: 3000px) {
@@ -1720,6 +1855,9 @@ header > .container > .contact > p {
     margin: 0;
     width: 17.5rem;
     height: 35.3rem;
+    margin-right: 0.3rem;
+    margin-top: 0.6rem;
+    border-radius: 12px;
   }
   html body main #sixth_section > .container #prev6 {
     width: 1.9rem;
@@ -1742,6 +1880,55 @@ header > .container > .contact > p {
     margin-right: 0.2rem;
     width: 6px !important;
     height: 6px !important;
+  }
+  html body main #seventh_section {
+    padding: 0;
+    margin: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  html body main #seventh_section > .container {
+    width: 100%;
+  }
+  html body main #seventh_section > .container > h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 2.6rem;
+    margin-bottom: 3.5rem;
+  }
+  html body main #seventh_section > .container > form > div {
+    padding: 0;
+    margin: 0;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+  html body main #seventh_section > .container > form > div > p {
+    padding: 0;
+    margin: 0;
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+  }
+  html body main #seventh_section > .container > form > div > input {
+    padding: 0;
+    margin: 0;
+    width: 34.8rem;
+    height: 6rem;
+    margin-bottom: 2.5rem;
+    padding-left: 0.8rem;
+  }
+  html body main #seventh_section > .container > form > div > a {
+    width: 5.8rem;
+    height: 6rem;
+    bottom: 2.5rem;
+  }
+  html body main #seventh_section > .container > form > div > a > div {
+    width: 2.6rem;
+    height: 1.7rem;
+  }
+  html body main #seventh_section > .container > form > button {
+    width: 36.2rem;
+    height: 8.1rem;
+    font-size: 2.3rem;
   }
 }
 
