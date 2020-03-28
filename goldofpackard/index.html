@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/test.css">
     <title>Gold of packard</title>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
 </head>
 <body>
     <main>
@@ -453,6 +454,7 @@
                         <a>
                             <div></div>
                         </a>
+                        
                     </div>
                     <div>
                         <p>Выберите время:</p>
@@ -464,9 +466,18 @@
                     <div>
                         <p>Количество гостей:</p>
                         <input type="text" id="quantity_stol">
-                        <a>
+                        <a id="seventh3_btn">
                             <div></div>
                         </a>
+                        <div id="submenu3" class="submenu">
+                            <div><p>1</p></div>
+                            <div><p>2</p></div>
+                            <div><p>3</p></div>
+                            <div><p>4</p></div>
+                            <div><p>5</p></div>
+                            <div><p>6</p></div>
+                            <div><p>7</p></div>
+                        </div>
                     </div>
                     <button type="submit">
                         БРОНИРОВАТЬ
@@ -475,8 +486,94 @@
             </div>
         </section>     
         <footer>
-            <div class="container">
-
+            <div class="container" id="foot_container">
+                <a class="dg-widget-link" href="http://2gis.ru/barnaul/firm/70000001007287983/center/83.6968..">
+                    Посмотреть на карте Барнаула
+                </a>
+                <div class="dg-widget-link">
+                    <a href="http://2gis.ru/barnaul/firm/70000001007287983/photos/7000000..">
+                        Фотографии компании
+                    </a>
+                </div>
+                <div class="dg-widget-link">
+                    <a href="http://2gis.ru/barnaul/center/83.696825,53.35265/zoom/16/rou.. of Packard, ресторан?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">
+                        Найти проезд до Gold of Packard, ресторан</a>
+                </div>
+                    <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+                    <script charset="utf-8">
+                        var vidget_h = String(document.getElementById("foot_container").clientHeight) + "px";
+                        console.log("height: " + vidget_h);
+                        if (document.body.offsetWidth < 1011) {
+                            new DGWidgetLoader({
+                                "width":"100%",
+                                "height":vidget_h,
+                                "borderColor":"#a3a3a3",
+                                "pos":{"lat":33.353112933507845,"lon":2.1458322,"zoom":17},
+                                "opt":{"city":"barnaul"},
+                                "org":[{"id":"70000001007287983"}]
+                                // 83.64583027267456
+                            });
+                        }
+                        else {
+                            new DGWidgetLoader({
+                                "width":"100%",
+                                "height":vidget_h,
+                                "borderColor":"#a3a3a3",
+                                "pos":{"lat":53.353112933507845,"lon":83.1458322,"zoom":16},
+                                "opt":{"city":"barnaul"},
+                                "org":[{"id":"70000001007287983"}]
+                                // 83.64583027267456
+                            });
+                        }
+                    </script>
+                    <noscript style="color:#c00;font-size:16px;font-weight:bold;">
+                        Виджет карты использует JavaScript. Включите его в настройках вашего браузера.
+                    </noscript>
+            </div>
+            <div class="end">
+                <a class="politics">
+                    Политика конфиденциальности
+                </a>
+                <a class="logo_footer" href="index.html">
+                    <img src="icon/logo.png" alt="">
+                </a>
+                <p>
+                    Разработка сайта MurStyleDesign
+                </p>
+            </div>
+            <div class="footer_contact">
+                <div class="contact_block">
+                    <h3>
+                        Gold of
+                        packard
+                    </h3>
+                    <div class="address">
+                        <div></div>
+                        <p>
+                            Барнаул, ул. Малахова, 94Б
+                        </p>
+                    </div>
+                    <div class="contact">
+                        <button></button>
+                        <p>202-131</p>
+                        <button>
+                            Перезвоните мне
+                        </button>
+                    </div>
+                    <div class="email">
+                        <a>
+                            goldofpackard@mail.ru
+                        </a>
+                    </div>
+                    <div class="social">
+                        <a href="#">
+                            <img src="icon/instagram.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="icon/tripadvisor.png" alt="">
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
     </main>

@@ -62,7 +62,7 @@
                     background-color: #dec58c
                     right: 0
                     bottom: 7.5rem
-                    z-index: 4
+                    z-index: 2
                     display: flex
                     justify-content: center
                     align-items: center
@@ -71,6 +71,32 @@
                         height: 1.7rem
                         background: url("../img/seventh_btn.png") center no-repeat
                         background-size: contain
+                > .submenu
+                    list-style: none
+                    margin: 0
+                    padding: 0
+                    transition: 0.5s ease-in-out
+                    position: absolute
+                    transform-origin: 0 0
+                    transform: scaleY(0)
+                    z-index: 20
+                    left: 0
+                    top: 11.5rem
+                    border-radius: 1.5rem
+                    display: flex
+                    flex-direction: column
+                    > div
+                        cursor: pointer
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        text-decoration: none
+                        background: #fff
+                        color: #757473
+                        width: 35.9rem
+                        height: 3.7rem
+                        font-size: 2.4rem
+                        > p
             > button
                 cursor: pointer
                 align-self: center

@@ -451,7 +451,81 @@
                                 width: 36.2rem
                                 height: 8.1rem
                                 font-size: 2.3rem
-                            
+                > footer
+                    > .container
+                        height: 31rem
+                    > .end
+                        +reset
+                        padding-top: 33rem
+                        padding-bottom: 3rem
+                        flex-flow: row wrap
+                        > .politics
+                            +reset
+                            font-size: 1.8rem
+                            margin-bottom: 1rem
+                        > .logo_footer
+                            order: -1
+                            +reset
+                            margin-bottom: 1rem
+                            > img
+                                width: 28.2rem
+                                height: 5rem
+                        > p
+                            +reset
+                            margin-bottom: 1rem
+                            font-size: 1.6rem                          
+                    > .footer_contact
+                        width: 38.7rem
+                        height: 34.8rem
+                        left: 1rem
+                        top: 26rem
+                        > .contact_block
+                            width: 36.7rem
+                            height: 33rem
+                            > h3
+                                font-size: 3.5rem
+                            > .address
+                                +reset
+                                margin-left: 2.7rem
+                                > div
+                                    +reset
+                                    margin-right: 1.2rem
+                                    width: 2rem
+                                    height: 3rem
+                                > p
+                                    font-size: 1.8rem
+                            > .contact
+                                +reset
+                                margin-left: 2.7rem
+                                > button:first-child
+                                    +reset
+                                    margin-right: 1.2rem
+                                    width: 2.8rem
+                                    height: 2.6rem
+                                > p
+                                    +reset
+                                    margin-right: 1.2rem
+                                    font-size: 2rem
+                                > button:nth-child(3)
+                                    font-size: 1.3rem
+                                    width: 16rem
+                                    height: 3rem
+                            > .email
+                                +reset
+                                margin-left: 2.7rem
+                                > a
+                                    font-size: 1.8rem
+                            > .social
+                                > a:first-child
+                                    +reset
+                                    margin-right: 1.2rem
+                                    > img
+                                        width: 4.3rem
+                                        height: 4.3rem
+                                > a:nth-child(2)                                   
+                                    > img
+                                        width: 6.4rem
+                                        height: 4rem
 @media (min-width: 551px) and (max-width: 1010px)
     html
         font-size: 13px
@@ -472,6 +546,8 @@
 @media (min-width: 315px) and (max-width: 369px)
     html
         font-size: 8px
+    .footer_contact
+        left: 0 !important
 // etc
 @media (max-width: 330px)
     #second_section

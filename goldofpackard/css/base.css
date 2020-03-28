@@ -29,7 +29,7 @@ header {
   width: 100%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  z-index: 2;
+  z-index: 900;
 }
 
 header > .container {
@@ -84,7 +84,7 @@ header > .container > nav {
       justify-content: space-around;
   width: 118rem;
   overflow: hidden;
-  z-index: 2;
+  z-index: 90;
 }
 
 header > .container > nav > a {
@@ -1120,7 +1120,7 @@ header > .container > .contact > p {
   height: 58.4rem;
   margin-right: 0.5rem;
   margin-top: 0.8rem;
-  border-radius: 15px;
+  border-radius: 1.5rem;
 }
 
 #sixth_section > .container #prev6 {
@@ -1255,7 +1255,7 @@ header > .container > .contact > p {
   background-color: #dec58c;
   right: 0;
   bottom: 7.5rem;
-  z-index: 4;
+  z-index: 2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1272,6 +1272,49 @@ header > .container > .contact > p {
   height: 1.7rem;
   background: url("../img/seventh_btn.png") center no-repeat;
   background-size: contain;
+}
+
+#seventh_section > .container > form > div > .submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  z-index: 20;
+  left: 0;
+  top: 11.5rem;
+  border-radius: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#seventh_section > .container > form > div > .submenu > div {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  background: #fff;
+  color: #757473;
+  width: 35.9rem;
+  height: 3.7rem;
+  font-size: 2.4rem;
 }
 
 #seventh_section > .container > form > button {
@@ -1292,6 +1335,241 @@ header > .container > .contact > p {
   font-weight: 700;
   letter-spacing: 0.3rem;
   color: #513623;
+}
+
+footer {
+  font-family: "Merriweather";
+  position: relative;
+}
+
+footer > .container {
+  width: 100%;
+  height: 80rem;
+  z-index: 6;
+}
+
+footer > .end {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row flex;
+          flex-flow: row flex;
+}
+
+footer > .end > .politics {
+  color: #b6a172;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-decoration: underline;
+  letter-spacing: 0.036rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+footer > .end > .logo_footer {
+  margin-bottom: 2rem;
+}
+
+footer > .end > .logo_footer > img {
+  width: 42.7rem;
+  height: 7.6rem;
+}
+
+footer > .end > p {
+  color: #b6a172;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-decoration: underline;
+  letter-spacing: 0.036rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1rem;
+}
+
+footer > .footer_contact {
+  position: absolute;
+  left: 33rem;
+  top: 12rem;
+  width: 65.2rem;
+  height: 58.5rem;
+  -webkit-box-shadow: 1px 1px 2px rgba(58, 57, 56, 0.3);
+          box-shadow: 1px 1px 2px rgba(58, 57, 56, 0.3);
+  border: 0.4rem solid #b2855f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 8;
+}
+
+footer > .footer_contact > .contact_block {
+  width: 62.4rem;
+  height: 56.1rem;
+  -webkit-box-shadow: 1px 1px 8px rgba(58, 57, 56, 0.47);
+          box-shadow: 1px 1px 8px rgba(58, 57, 56, 0.47);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer > .footer_contact > .contact_block > h3 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 8px rgba(212, 165, 83, 0.19);
+  color: #c8ae73;
+  font-family: "Romul";
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 0.45rem;
+}
+
+footer > .footer_contact > .contact_block > .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-left: 5rem;
+}
+
+footer > .footer_contact > .contact_block > .address > div {
+  width: 3.4rem;
+  height: 5.1rem;
+  -webkit-box-shadow: 0 0 0 rgba(34, 34, 31, 0.75);
+          box-shadow: 0 0 0 rgba(34, 34, 31, 0.75);
+  margin-right: 2.2rem;
+  background: url("../icon/pin2.png");
+  background-size: contain;
+}
+
+footer > .footer_contact > .contact_block > .address > p {
+  color: #ab8b42;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+}
+
+footer > .footer_contact > .contact_block > .contact {
+  margin-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+footer > .footer_contact > .contact_block > .contact > button:first-child {
+  cursor: pointer;
+  width: 4.8rem;
+  height: 4.4rem;
+  border: none;
+  background: url("../icon/call2.png") no-repeat;
+  background-size: contain;
+  margin-right: 2.2rem;
+}
+
+footer > .footer_contact > .contact_block > .contact > p {
+  margin-right: 2.2rem;
+  color: #ab8b42;
+  font-size: 3.4rem;
+  font-weight: 400;
+}
+
+footer > .footer_contact > .contact_block > .contact > button:nth-child(3) {
+  cursor: pointer;
+  border: none;
+  width: 22.9rem;
+  height: 4.7rem;
+  border-radius: 5px;
+  border: 0.3rem solid #e1cb89;
+  color: #ab8b42;
+  font-size: 2.2rem;
+  font-weight: 400;
+  background: transparent;
+}
+
+footer > .footer_contact > .contact_block > .email {
+  margin-left: 5rem;
+  width: 100%;
+}
+
+footer > .footer_contact > .contact_block > .email > a {
+  text-decoration: none;
+  color: #ab8b42;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+}
+
+footer > .footer_contact > .contact_block > .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > .footer_contact > .contact_block > .social > a:first-child {
+  margin-right: 2.2rem;
+}
+
+footer > .footer_contact > .contact_block > .social > a:first-child > img {
+  width: 7.3rem;
+  height: 7.3rem;
+}
+
+footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
+  width: 11rem;
+  height: 6.8rem;
 }
 
 @media (min-width: 1921px) and (max-width: 3000px) {
@@ -1930,6 +2208,115 @@ header > .container > .contact > p {
     height: 8.1rem;
     font-size: 2.3rem;
   }
+  html body main > footer > .container {
+    height: 31rem;
+  }
+  html body main > footer > .end {
+    padding: 0;
+    margin: 0;
+    padding-top: 33rem;
+    padding-bottom: 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  html body main > footer > .end > .politics {
+    padding: 0;
+    margin: 0;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  html body main > footer > .end > .logo_footer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  html body main > footer > .end > .logo_footer > img {
+    width: 28.2rem;
+    height: 5rem;
+  }
+  html body main > footer > .end > p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+  }
+  html body main > footer > .footer_contact {
+    width: 38.7rem;
+    height: 34.8rem;
+    left: 1rem;
+    top: 26rem;
+  }
+  html body main > footer > .footer_contact > .contact_block {
+    width: 36.7rem;
+    height: 33rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > h3 {
+    font-size: 3.5rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .address {
+    padding: 0;
+    margin: 0;
+    margin-left: 2.7rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .address > div {
+    padding: 0;
+    margin: 0;
+    margin-right: 1.2rem;
+    width: 2rem;
+    height: 3rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .address > p {
+    font-size: 1.8rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .contact {
+    padding: 0;
+    margin: 0;
+    margin-left: 2.7rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .contact > button:first-child {
+    padding: 0;
+    margin: 0;
+    margin-right: 1.2rem;
+    width: 2.8rem;
+    height: 2.6rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .contact > p {
+    padding: 0;
+    margin: 0;
+    margin-right: 1.2rem;
+    font-size: 2rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .contact > button:nth-child(3) {
+    font-size: 1.3rem;
+    width: 16rem;
+    height: 3rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .email {
+    padding: 0;
+    margin: 0;
+    margin-left: 2.7rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .email > a {
+    font-size: 1.8rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .social > a:first-child {
+    padding: 0;
+    margin: 0;
+    margin-right: 1.2rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .social > a:first-child > img {
+    width: 4.3rem;
+    height: 4.3rem;
+  }
+  html body main > footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
+    width: 6.4rem;
+    height: 4rem;
+  }
 }
 
 @media (min-width: 551px) and (max-width: 1010px) {
@@ -1969,6 +2356,9 @@ header > .container > .contact > p {
 @media (min-width: 315px) and (max-width: 369px) {
   html {
     font-size: 8px;
+  }
+  .footer_contact {
+    left: 0 !important;
   }
 }
 
