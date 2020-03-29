@@ -1,0 +1,87 @@
+=section_w
+    position: fixed
+    width: 100vw
+    height: 100vh
+    z-index: 990
+    background: rgba(208, 211, 215, 0.7)
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: 0.4s
+    top: 0
+    left: 0
+    transform: scaleY(0)
+    
+=container_window
+    padding-top: 4.5rem
+    padding-bottom: 5rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+.cont_wind
+    background: #fff
+    border-radius: 15px
+    padding-left: 5rem
+    padding-right: 5rem
+    position: relative
+    > button
+        
+    > p
+        color: #251506
+        font-size: 3rem
+        font-weight: 400
+        line-height: 3rem
+        letter-spacing: 0.045rem
+        text-align: center
+    > form
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-top: 4.5rem
+        > input
+            padding-left: 2.2rem
+            width: 46.5rem
+            height: 7.7rem
+            border-radius: 5px
+            border: 0.2rem solid #212121
+            background: transparent
+            margin-bottom: 4.5rem
+            color: #828181
+            font-size: 3rem
+            font-weight: 400
+            letter-spacing: 0.045rem
+        > button
+            cursor: pointer
+            border: none
+            color: #513623
+            font-size: 2.4rem
+            font-weight: 700
+            letter-spacing: 0.3rem
+            width: 46.1rem
+            height: 8.5rem
+            box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08)
+            border-radius: 1rem
+            background-color: #e1cb89
+            background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%)   
+#politic_section
+    +section_w
+    > .container
+        padding: 3rem
+        background: #fff
+        border-radius: 15px
+        width: 50%
+        > p
+            margin-bottom: 1rem
+            font-size: 2rem
+            color: #513623
+#call_me_section
+    +section_w
+    > .container
+        +container_window
+        
+#order_section
+    +section_w
+    > .container
+        +container_window
+        

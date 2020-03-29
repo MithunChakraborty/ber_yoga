@@ -15,6 +15,12 @@ var next6 = document.getElementById("next6");
 var list4_sect = document.getElementById("images");
 var list6_sect = document.getElementById("images6");
 var seventh3_btn = document.getElementById("seventh3_btn");
+var polic_btn = document.getElementById("polic_btn");
+var politic_section = document.getElementById("politic_section");
+var call_me3 = document.getElementById("call_me3");
+var call_me2 = document.getElementById("call_me2");
+var call_me = document.getElementById("call_me");
+var call_me_section = document.getElementById("call_me_section");
 
 function flex_menu() {
     third_sec2.style.marginTop = `-${third_sec2.offsetHeight}px`;
@@ -241,9 +247,29 @@ seventh3_btn.addEventListener('click', () => {
         clock--;
     }
 });
-var list3_sub = document.getElementById("submenu3").children;
+var list3_sub = document.getElementById("submenu3").childNodes;
 for (var u = 0; u < list3_sub.length; u++) {
-    list3_sub[u].addEventListener('click', () => {
-        document.getElementById("quantity_stol").nodeValue = list3_sub[u].firstChild.textContent;
+    list3_sub[u].addEventListener('click', (event) => {
+        let x = event.target.childNodes[0];
+        document.getElementById("quantity_stol").value = x.innerText;
+        document.getElementById("submenu3").style.transform = "scaleY(0)";
     });
 }
+// politic block
+polic_btn.addEventListener('click', () => {
+    politic_section.style.transform = "scaleY(1)";
+});
+politic_section.addEventListener("click", () => {
+    politic_section.style.transform = "scaleY(0)";
+});
+// call me
+var call = [call_me, call_me2, call_me3];
+for (var o = 0; o < call.length; o++) {
+    call[o].addEventListener("click", () => {
+        call_me_section.style.transform = "scaleY(1)";
+    });
+}
+call_me_section.addEventListener("click", () => {
+    call_me_section.style.transform = "scaleY(0)";
+});
+// order

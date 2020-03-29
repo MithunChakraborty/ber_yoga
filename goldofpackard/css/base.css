@@ -4,6 +4,8 @@ html {
 
 body {
   background: url("../img/so-white.png");
+  overflow-y: hidden;
+  font-family: "Merriweather";
 }
 
 html,
@@ -85,6 +87,8 @@ header > .container > nav {
   width: 118rem;
   overflow: hidden;
   z-index: 90;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
 }
 
 header > .container > nav > a {
@@ -1243,6 +1247,7 @@ header > .container > .contact > p {
   font-weight: 400;
   letter-spacing: 0.036rem;
   margin-bottom: 7.5rem;
+  outline: none;
 }
 
 #seventh_section > .container > form > div > a {
@@ -1287,8 +1292,7 @@ header > .container > .contact > p {
           transform: scaleY(0);
   z-index: 20;
   left: 0;
-  top: 11.5rem;
-  border-radius: 1.5rem;
+  top: 11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1296,6 +1300,9 @@ header > .container > .contact > p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #ffffff;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
 }
 
 #seventh_section > .container > form > div > .submenu > div {
@@ -1312,9 +1319,10 @@ header > .container > .contact > p {
   text-decoration: none;
   background: #fff;
   color: #757473;
-  width: 35.9rem;
+  width: 30.2rem;
   height: 3.7rem;
   font-size: 2.4rem;
+  border-radius: 1.5rem;
 }
 
 #seventh_section > .container > form > button {
@@ -1335,6 +1343,183 @@ header > .container > .contact > p {
   font-weight: 700;
   letter-spacing: 0.3rem;
   color: #513623;
+}
+
+.cont_wind {
+  background: #fff;
+  border-radius: 15px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  position: relative;
+}
+
+.cont_wind > p {
+  color: #251506;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.045rem;
+  text-align: center;
+}
+
+.cont_wind > form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4.5rem;
+}
+
+.cont_wind > form > input {
+  padding-left: 2.2rem;
+  width: 46.5rem;
+  height: 7.7rem;
+  border-radius: 5px;
+  border: 0.2rem solid #212121;
+  background: transparent;
+  margin-bottom: 4.5rem;
+  color: #828181;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.045rem;
+}
+
+.cont_wind > form > button {
+  cursor: pointer;
+  border: none;
+  color: #513623;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  width: 46.1rem;
+  height: 8.5rem;
+  -webkit-box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08);
+          box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  background-color: #e1cb89;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e3cd70), color-stop(56%, #e0bf75), color-stop(57%, #e0bf75), to(#ebc97c));
+  background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%);
+}
+
+#politic_section {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 990;
+  background: rgba(208, 211, 215, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+#politic_section > .container {
+  padding: 3rem;
+  background: #fff;
+  border-radius: 15px;
+  width: 50%;
+}
+
+#politic_section > .container > p {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #513623;
+}
+
+#call_me_section {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 990;
+  background: rgba(208, 211, 215, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+#call_me_section > .container {
+  padding-top: 4.5rem;
+  padding-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#order_section {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 990;
+  background: rgba(208, 211, 215, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  top: 0;
+  left: 0;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+#order_section > .container {
+  padding-top: 4.5rem;
+  padding-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer {
@@ -1363,6 +1548,7 @@ footer > .end {
 }
 
 footer > .end > .politics {
+  cursor: pointer;
   color: #b6a172;
   font-size: 2.4rem;
   font-weight: 400;
@@ -1427,7 +1613,7 @@ footer > .footer_contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 8;
+  z-index: 1;
 }
 
 footer > .footer_contact > .contact_block {
@@ -1522,7 +1708,7 @@ footer > .footer_contact > .contact_block > .contact > p {
 footer > .footer_contact > .contact_block > .contact > button:nth-child(3) {
   cursor: pointer;
   border: none;
-  width: 22.9rem;
+  width: 25rem;
   height: 4.7rem;
   border-radius: 5px;
   border: 0.3rem solid #e1cb89;
@@ -1586,7 +1772,7 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   html {
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 
@@ -1605,6 +1791,7 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
     -webkit-box-shadow: 0.2rem 0.1rem 0.5rem 0.1rem #160b07;
             box-shadow: 0.2rem 0.1rem 0.5rem 0.1rem #160b07;
     z-index: 4;
+    height: 7.2rem;
   }
   html body main header > .container {
     padding: 0;
@@ -2203,6 +2390,12 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
     width: 2.6rem;
     height: 1.7rem;
   }
+  html body main #seventh_section > .container > form > div > .submenu {
+    top: 10rem;
+  }
+  html body main #seventh_section > .container > form > div > .submenu > div {
+    width: 29.7rem;
+  }
   html body main #seventh_section > .container > form > button {
     width: 36.2rem;
     height: 8.1rem;
@@ -2316,6 +2509,36 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
   html body main > footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
     width: 6.4rem;
     height: 4rem;
+  }
+  html body #politic_section > .container {
+    width: 70%;
+    padding: 1rem;
+  }
+  html body #politic_section > .container > p {
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem !important;
+  }
+  .cont_wind {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .cont_wind > p {
+    font-size: 1.8rem;
+  }
+  .cont_wind > form {
+    padding-top: 2rem;
+  }
+  .cont_wind > form > input {
+    width: 27rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+  .cont_wind > form > button {
+    width: 30rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    letter-spacing: 0;
   }
 }
 
