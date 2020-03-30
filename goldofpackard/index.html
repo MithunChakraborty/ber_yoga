@@ -1,4 +1,3 @@
-<!-- Ctrl + K + C - comment; Ctrl + U + C - uncomment -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -26,19 +25,19 @@
                     <a href="#second_section">
                         МЕНЮ
                     </a>
-                    <a href="#">
+                    <a href="#third_section">
                         О НАС
                     </a>
-                    <a href="#">
+                    <a href="#fourth_section">
                         АКЦИИ
                     </a>
-                    <a href="#">
+                    <a href="#fifth_section">
                         ЗАКАЗ БАНКЕТА
                     </a>
-                    <a href="#">
+                    <a href="#sixth_section">
                         ОТЗЫВЫ
                     </a>
-                    <a href="#">
+                    <a href="#footer_block">
                         КОНТАКТЫ
                     </a>
                 </nav>
@@ -91,9 +90,9 @@
                     <p>
                         Работаем ежедневно с 12:00 до 00:00
                     </p>
-                    <button>
+                    <a href="#seventh_section">
                         ЗАБРОНИРОВАТЬ СТОЛИК
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -450,7 +449,7 @@
                 <form action="">
                     <div>
                         <p>Выберите дату:</p>
-                        <input type="text" placeholder="дд. мм.">
+                        <input type="text" placeholder="дд. мм." id="date_stol">
                         <a>
                             <div></div>
                         </a>
@@ -458,7 +457,7 @@
                     </div>
                     <div>
                         <p>Выберите время:</p>
-                        <input type="text" placeholder="чч. мм.">
+                        <input type="text" placeholder="чч. мм." id="time_stol">
                         <a>
                             <div></div>
                         </a>
@@ -479,13 +478,13 @@
                             <div><p>7</p></div>
                         </div>
                     </div>
-                    <button type="submit">
+                    <a id="order_click_start">
                         БРОНИРОВАТЬ
-                    </button>
+                    </a>
                 </form>               
             </div>
         </section>     
-        <footer>
+        <footer id="footer_block">
             <div class="container" id="foot_container">
                 <a class="dg-widget-link" href="http://2gis.ru/barnaul/firm/70000001007287983/center/83.6968..">
                     Посмотреть на карте Барнаула
@@ -630,7 +629,9 @@
                 Введите Ваши данные,<br>
                 мы перезвоним
             </p>
-            <button></button>
+            <button class="wind_close">
+                <div class="close"></div>
+            </button>
             <form action="">
                 <input type="text" placeholder="Введите ваше имя">
                 <input type="text" placeholder="Введите номер телефона">
@@ -641,8 +642,35 @@
         </div>
     </section>
     <section id="order_section">
-
+        <div class="container cont_wind">
+            <p>
+                Подробности Вашего бронирования:
+            </p>
+            <div>
+                <p>
+                    Дата, время, кол-во человек
+                </p>
+                <a href="#seventh_section" id="order_change_btn">
+                    Изменить
+                </a>
+            </div>
+            <button class="wind_close">
+                <div class="close"></div>
+            </button>
+            <form action="">
+                <input type="text" placeholder="Введите ваше имя">
+                <input type="text" placeholder="Введите вашу фамилию">
+                <input type="text" placeholder="Введите номер телефона">
+                <input type="text" placeholder="Ваши пожелания">
+                <input id="date_order" type="hidden">
+                <input id="quantity_order" type="hidden">
+                <input id="time_order" type="hidden">
+                <button type="submit">
+                    ЗАБРОНИРОВАТЬ
+                </button>
+            </form>
+        </div>
     </section>
-    <script src="js/mobile.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

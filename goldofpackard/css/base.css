@@ -114,6 +114,9 @@ header > .container > .contact {
 }
 
 header > .container > .contact > button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,19 +126,26 @@ header > .container > .contact > button {
   width: 3.2rem;
   height: 2.96rem;
   padding: 0;
-  margin-left: 8rem;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 header > .container > .contact > button > img {
   width: 3.2rem;
   height: 2.96rem;
+  margin-right: 2rem;
 }
 
 header > .container > .contact > p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: #33270d;
   font-size: 3rem;
   font-weight: 400;
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
 #first_section {
@@ -323,10 +333,19 @@ header > .container > .contact > p {
   text-align: center;
 }
 
-#first_section > .container > .content > button {
+#first_section > .container > .content > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
   cursor: pointer;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   margin-top: 6rem;
   margin-bottom: 13rem;
@@ -862,7 +881,7 @@ header > .container > .contact > p {
   margin-left: 1rem;
   z-index: 8;
   border: none;
-  width: 8px;
+  width: 1px;
   height: 10px;
   border-radius: 50%;
   cursor: pointer;
@@ -1325,10 +1344,18 @@ header > .container > .contact > p {
   border-radius: 1.5rem;
 }
 
-#seventh_section > .container > form > button {
+#seventh_section > .container > form > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   border: none;
   width: 44.8rem;
@@ -1351,6 +1378,83 @@ header > .container > .contact > p {
   padding-left: 5rem;
   padding-right: 5rem;
   position: relative;
+}
+
+.cont_wind > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4.5rem;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cont_wind > div > p {
+  color: #251506;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.038rem;
+}
+
+.cont_wind > div > a {
+  color: #251506;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.038rem;
+}
+
+.cont_wind > button {
+  cursor: pointer;
+  position: absolute;
+  right: -1.5rem;
+  top: -1.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #e1c076;
+  width: 5.5rem;
+  height: 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont_wind > button .close {
+  width: 3.2rem;
+  height: 3.2rem;
+  opacity: 0.8;
+  position: relative;
+}
+
+.cont_wind > button .close:hover {
+  opacity: 1;
+}
+
+.cont_wind > button .close:before, .cont_wind > button .close:after {
+  position: absolute;
+  left: 1.5rem;
+  top: 0.2rem;
+  content: ' ';
+  height: 2.7rem;
+  width: 0.2rem;
+  background-color: #333;
+}
+
+.cont_wind > button .close:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.cont_wind > button .close:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .cont_wind > p {
@@ -1388,9 +1492,10 @@ header > .container > .contact > p {
   background: transparent;
   margin-bottom: 4.5rem;
   color: #828181;
-  font-size: 3rem;
+  font-size: 2.7rem;
   font-weight: 400;
   letter-spacing: 0.045rem;
+  outline: none;
 }
 
 .cont_wind > form > button {
@@ -1661,8 +1766,8 @@ footer > .footer_contact > .contact_block > .address {
 }
 
 footer > .footer_contact > .contact_block > .address > div {
-  width: 3.4rem;
-  height: 5.1rem;
+  width: 2.72rem;
+  height: 4.08rem;
   -webkit-box-shadow: 0 0 0 rgba(34, 34, 31, 0.75);
           box-shadow: 0 0 0 rgba(34, 34, 31, 0.75);
   margin-right: 2.2rem;
@@ -1690,8 +1795,8 @@ footer > .footer_contact > .contact_block > .contact {
 
 footer > .footer_contact > .contact_block > .contact > button:first-child {
   cursor: pointer;
-  width: 4.8rem;
-  height: 4.4rem;
+  width: 3.84rem;
+  height: 3.52rem;
   border: none;
   background: url("../icon/call2.png") no-repeat;
   background-size: contain;
@@ -1761,6 +1866,12 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
 @media (min-width: 1921px) and (max-width: 3000px) {
   html {
     font-size: 11px;
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1800px) {
+  html {
+    font-size: 9px;
   }
 }
 
@@ -1845,6 +1956,8 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
             flex-direction: column;
     -webkit-transition: 0.4s ease;
     transition: 0.4s ease;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
     height: 90%;
   }
   html body main header > .container > nav > a {
@@ -1994,7 +2107,7 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
     font-size: 1.6rem;
     letter-spacing: 0.07rem;
   }
-  html body main #first_section > .container > .content > button {
+  html body main #first_section > .container > .content > a {
     padding: 0;
     margin: 0;
     width: 27.4rem;
@@ -2396,7 +2509,7 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
   html body main #seventh_section > .container > form > div > .submenu > div {
     width: 29.7rem;
   }
-  html body main #seventh_section > .container > form > button {
+  html body main #seventh_section > .container > form > a {
     width: 36.2rem;
     height: 8.1rem;
     font-size: 2.3rem;
@@ -2523,6 +2636,15 @@ footer > .footer_contact > .contact_block > .social > a:nth-child(2) > img {
     padding-right: 2rem;
   }
   .cont_wind > p {
+    font-size: 1.8rem;
+  }
+  .cont_wind > div {
+    margin-top: 2rem;
+  }
+  .cont_wind > div > p {
+    font-size: 1.8rem;
+  }
+  .cont_wind > div > a {
     font-size: 1.8rem;
   }
   .cont_wind > form {
