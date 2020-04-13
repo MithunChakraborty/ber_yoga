@@ -1,0 +1,214 @@
+#delivery_section
+    font-family: $p_font
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: relative
+    .container
+        width: 121rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        position: relative
+        h3
+            margin: 0
+            padding: 0
+            margin-bottom: 7rem
+            text-align: center
+            text-shadow: 8px 4px 10px rgba(220, 199, 124, 0.48), 0 0 0 rgba(34, 34, 31, 0.75)
+            color: #d6be87
+            font-family: $h_font
+            font-size: 6.5rem
+            font-weight: 400
+            letter-spacing: 0.1rem
+        #menu_delivery
+            width: 100%
+            display: flex
+            flex-flow: row wrap
+            justify-content: center
+            margin-bottom: 6rem
+            a
+                text-transform: uppercase
+                margin-left: 3.7rem
+                margin-right: 3.7rem
+                color: #251c06
+                font-size: 2.9rem
+                font-weight: 400
+                letter-spacing: 0.05rem
+                text-decoration: none
+                line-height: 8rem
+                position: relative
+                cursor: pointer
+            a::before
+                content: ''
+                bottom: 20%
+                left: 0
+                position: absolute
+                width: 0%
+                height: 0.3rem
+                background-color: #d6be87
+                transition: 0.3s
+            a:hover::before
+                width: 100%
+        #delivery_block
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            width: 100%
+            .delivery_block_sect
+                transform: scaleY(1)
+                display: flex
+                flex-direction: column
+                border: 2px solid #251c06
+                border-radius: 5px
+                transition: 0.3s
+                .delivery_block_sect_item
+                    display: flex
+                    align-items: center
+                    cursor: pointer
+                    border-bottom: 2px solid #251c06
+                    transition: 0.3s
+                    justify-content: space-between
+                    .main_delivery_item
+                        display: flex
+                        align-items: center
+                        justify-content: space-between
+                        .delivery_text
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            .del_main_text
+                                margin-left: 1rem
+                                color: #251c06
+                                font-size: 2.2rem
+                                font-weight: 400
+                                letter-spacing: 0.03rem
+                                text-align: center
+                                margin-right: 1rem
+                                text-transform: uppercase
+                            .del_other_text
+                                color: #251c06
+                                font-size: 1.8rem
+                                font-weight: 400
+                                letter-spacing: 0.02rem
+                                text-align: center
+                    .del_end_sect
+                        display: flex
+                        align-items: center
+                        .delivery_price
+                            color: #251c06
+                            font-size: 2.2rem
+                            font-weight: 400
+                            letter-spacing: 0.03rem
+                            text-align: center
+                        .delivery_plus
+                            position: relative
+                            cursor: pointer
+                            display: flex
+                            .plus
+                                height: 5.6rem
+                                width: 5.6rem
+                            .plus::before,
+                            .plus::after
+                                position: absolute
+                                left: 2.6rem
+                                top: 1.4rem
+                                content: ' '
+                                height: 2.9rem
+                                width: 0.32rem
+                                background-color: grey
+                                transition: 0.3s
+                                opacity: 0
+                            .plus::before
+                            .plus::after
+                                transform: rotate(270deg)
+                .delivery_block_sect_item:last-child
+                    border: none
+                .delivery_block_sect_item:hover
+                    background-color: #e8e8e8
+                    .delivery_plus
+                        .plus::before,
+                        .plus::after
+                            opacity: 1
+        #delivery_start
+            text-transform: uppercase
+            border: none
+            background: transparent
+            margin-top: 5rem
+            margin-bottom: 5rem
+            color: #513623
+            font-size: 2.6rem
+            font-weight: 700
+            letter-spacing: 0.26rem
+            width: 53.9rem
+            height: 9.2rem
+            box-shadow: 0 0 8px 1px rgba(160, 138, 52, 0.27), 0 0 13px rgba(255, 255, 255, 0.08)
+            border-radius: 10px
+            border: 0.6rem solid #e1c572
+            cursor: pointer
+    .del_onion
+        width: 13.8rem
+        height: 10.4rem
+        position: absolute
+        left: 0
+        top: 55rem
+    .del_pepper
+        width: 30.8rem
+        height: 34.4rem
+        position: absolute
+        left: -5rem
+        bottom: 23rem
+    .del_champ
+        width: 11.7rem
+        height: 18.2rem
+        position: absolute
+        right: 0rem
+        top: 80rem
+    .del_basket
+        z-index: 8
+        position: fixed
+        bottom: 70rem
+        right: 10rem
+        display: none
+        .basket_img
+            position: relative
+            background: url("../icon/basket.png") no-repeat
+            background-size: contain
+            width: 17.5rem
+            height: 17.5rem
+            cursor: pointer
+            transition: 0.3s
+            .basket_img2
+                position: absolute
+                background: url("../icon/basket2.png") no-repeat
+                background-size: contain
+                width: 4.6rem
+                height: 4.6rem
+                right: 2.2rem
+                bottom: 0.8rem
+                display: flex
+                justify-content: center
+                align-items: center
+                p
+                    color: #ffffff
+                    font-size: 3.5rem
+                    font-weight: 400
+        .del_bask_price
+            display: none
+            color: #34290f
+            font-size: 2.4rem
+            font-weight: 400
+            letter-spacing: 0.036rem
+        .basket_img:hover
+            opacity: .7
+.menu_delivery_a_js::before
+    content: ''
+    bottom: 20%
+    left: 0
+    position: absolute
+    width: 100% !important
+    height: 0.3rem
+    background-color: #d6be87
+    transition: 0.3s

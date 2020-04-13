@@ -11,7 +11,7 @@
     top: 0
     left: 0
     transform: scaleY(0)
-    
+
 =container_window
     padding-top: 4.5rem
     padding-bottom: 5rem
@@ -38,7 +38,7 @@
             color: #251506
             font-size: 2.5rem
             font-weight: 400
-            letter-spacing: 0.038rem 
+            letter-spacing: 0.038rem
     > button
         cursor: pointer
         position: absolute
@@ -57,9 +57,9 @@
             height: 3.2rem
             opacity: 0.8
             position: relative
-        .close:hover 
+        .close:hover
             opacity: 1
-        .close:before, .close:after 
+        .close:before, .close:after
             position: absolute
             left: 1.5rem
             top: 0.2rem
@@ -67,9 +67,9 @@
             height: 2.7rem
             width: 0.2rem
             background-color: #333
-        .close:before 
+        .close:before
             transform: rotate(45deg)
-        .close:after 
+        .close:after
             transform: rotate(-45deg)
     > p
         color: #251506
@@ -109,7 +109,7 @@
             box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08)
             border-radius: 1rem
             background-color: #e1cb89
-            background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%)   
+            background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%)
 #politic_section
     +section_w
     > .container
@@ -125,9 +125,14 @@
     +section_w
     > .container
         +container_window
-        
+
 #order_section
     +section_w
     > .container
         +container_window
-        
+#slides_section
+    +section_w
+    > .container
+        > img
+            width: 29rem
+            height: 58.4rem

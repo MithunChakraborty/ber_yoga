@@ -1,23 +1,32 @@
 #second_section
     display: flex
+    flex-direction: column
+    align-items: center
     justify-content: center
     font-family: $p_font
     position: relative
     overflow: hidden
+    padding-bottom: 5rem
     > .container
         display: flex
         flex-direction: column
-        width: 118rem
+        align-items: center
+        width: 120rem
         margin-top: 6.2rem
         position: relative
         > .gallery_wrapper
             display: flex
+            justify-content: center
             flex-flow: row wrap
-            justify-content: space-between
-            > img
-                width: 28rem
-                height: 27.3rem
-                margin-bottom: 2rem
+            margin-top: 4rem
+            margin-bottom: 1rem
+            > div
+                > img
+                    width: 28rem
+                    height: 27.3rem
+                    margin-bottom: 2rem
+                    margin-left: 0.7rem
+                    margin-right: 0.7rem
         > .view_menu_block
             display: flex
             flex-direction: column
@@ -91,4 +100,3 @@
         background: url("../icon/second-Peppers2.png") center
         background-size: contain
         position: absolute
-

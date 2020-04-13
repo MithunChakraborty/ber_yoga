@@ -24,11 +24,17 @@ var call_me_section = document.getElementById("call_me_section");
 var order_section = document.getElementById("order_section");
 var wind_close = document.getElementsByClassName("wind_close");
 var order_click_start = document.getElementById("order_click_start");
+var anch = document.getElementsByClassName("_anchor");
 
 function flex_menu() {
+    for (var p = 0; p < anch.length; p++) {
+        anch[p].style.marginTop = `-${header.offsetHeight}px`;
+        anch[p].style.paddingTop = `${header.offsetHeight}px`;
+    }
+
     third_sec2.style.marginTop = `-${third_sec2.offsetHeight}px`;
     if (this.document.body.offsetWidth < 1011) {
-        logo_mobile.src="icon/logo.png";
+        logo_mobile.src="icon/logo_header_i.png";
         menu_in.style.display = "block";
         menu_out.style.display = "none";
         document.body.style.overflow = 'auto';
@@ -40,7 +46,7 @@ function flex_menu() {
         header.style.top = 0;
     }
     else {
-        logo_mobile.src="icon/logo_mobile.png";
+        logo_mobile.src="icon/logo_big.png";
         header.style.height = "auto";
         first_section.style.margin = "0px 0px 0px 0px";
         menu_in.style.display = "none";
@@ -63,15 +69,20 @@ window.onorientationchange = () => {
     flex_menu();
 };
 window.addEventListener('scroll', function(event) {
+    for (var p = 0; p < anch.length; p++) {
+        anch[p].style.marginTop = `-${header.offsetHeight}px`;
+        anch[p].style.paddingTop = `${header.offsetHeight}px`;
+    }
+
     let windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
     if (this.document.body.offsetWidth > 1010) {
         if (windowScroll > (first_section.offsetHeight - 100)) {
             header.style.display = "flex";
-            logo_mobile.src="icon/logo_mobile.png";
+            //logo_mobile.src="icon/logo_mobile.png";
         }
         else {
             header.style.display = "none";
-            logo_mobile.src="icon/logo.png";
+            //logo_mobile.src="icon/logo.png";
         }
     }
     else {
@@ -91,12 +102,12 @@ for (var j=0, child; child=list[j]; j++) {
         });
     }
     else {
-        document.documentElement.clientHeight -= header.offsetHeight;    
+        document.documentElement.clientHeight -= header.offsetHeight;
     }
 }
 // mobile menu enter
 menu_in.addEventListener(
-    'click', 
+    'click',
     () => {
         menu_in.style.display = "none";
         menu_out.style.display = "block";
@@ -108,7 +119,7 @@ menu_in.addEventListener(
 );
 // mobile menu exit
 menu_out.addEventListener(
-    'click', 
+    'click',
     () => {
         menu_in.style.display = "block";
         menu_out.style.display = "none";
@@ -120,7 +131,7 @@ menu_out.addEventListener(
 );
 var z = 0;
 // third_continue
-third_btn.addEventListener('click', () => {       
+third_btn.addEventListener('click', () => {
     if (z == 0) {
         third_sec2.style.marginTop = `0px`;
         third_sign.style.transform = "rotate(180deg)";
@@ -138,7 +149,7 @@ const slide = 100 / quantity_img;
 var count = 0;
 var wrapper_btn4 = document.getElementById("wrapper_btn4").children;
 prev4.addEventListener('click', () => {
-    if (list4_sect.style.transform != "translateX(0%)") {       
+    if (list4_sect.style.transform != "translateX(0%)") {
         list4_sect.style.transform = `translateX(-${count - slide}%)`;
         count -= slide;
         for (var i = 0; i < wrapper_btn4.length; i++) {
@@ -165,7 +176,7 @@ next4.addEventListener('click', () => {
     if ((list4_sect.style.transform < `translateX(-${100 - slide}%)`) ||
         (list4_sect.style.transform == "translateX(0%)")) {
         count += slide;
-        list4_sect.style.transform = `translateX(-${count}%)`;        
+        list4_sect.style.transform = `translateX(-${count}%)`;
         for (var i = 0; i < wrapper_btn4.length; i++) {
             if (wrapper_btn4[i].className == "active_btn4") {
                 wrapper_btn4[i].className = "";
@@ -192,12 +203,12 @@ const _slide = 100 / _quantity_img;
 var _count = 0;
 var wrapper_btn6 = document.getElementById("wrapper_btn6").children;
 var _deadline = 0;
-if (document.body.offsetWidth < 1011) 
+if (document.body.offsetWidth < 1011)
     _deadline = 100 - _slide;
 else
     _deadline = 100 - _slide * 3;
 prev6.addEventListener('click', () => {
-    if (list6_sect.style.transform != "translateX(0%)") {       
+    if (list6_sect.style.transform != "translateX(0%)") {
         list6_sect.style.transform = `translateX(-${_count - _slide}%)`;
         _count -= _slide;
         for (var i = 0; i < wrapper_btn6.length; i++) {
@@ -224,7 +235,7 @@ next6.addEventListener('click', () => {
     if ((list6_sect.style.transform < `translateX(-${_deadline}%)`) ||
         (list6_sect.style.transform == "translateX(0%)")) {
         _count += _slide;
-        list6_sect.style.transform = `translateX(-${_count}%)`;        
+        list6_sect.style.transform = `translateX(-${_count}%)`;
         for (var i = 0; i < wrapper_btn6.length; i++) {
             if (wrapper_btn6[i].className == "active_btn4") {
                 wrapper_btn6[i].className = "";
@@ -297,6 +308,9 @@ order_click_start.addEventListener("click", () => {
     date_order.value = date_stol.value;
     quantity_order.value = quantity_stol.value;
     time_order.value = time_stol.value;
+    document.getElementById("sp_qu").textContent = quantity_order.value
+    document.getElementById("sp_date").textContent = date_order.value
+    document.getElementById("sp_time").textContent = time_order.value
 });
 document.getElementById("order_change_btn").addEventListener("click", () => {
     order_section.style.transform = "scaleY(0)";
@@ -305,7 +319,7 @@ document.getElementById("order_change_btn").addEventListener("click", () => {
 const anchors = document.querySelectorAll('a[href*="#"]')
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (e) {
-    e.preventDefault()    
+    e.preventDefault()
     const blockID = anchor.getAttribute('href').substr(1)
     document.getElementById(blockID).scrollIntoView({
       behavior: 'smooth',
@@ -313,4 +327,17 @@ for (let anchor of anchors) {
     });
   });
 }
-console.log();
+// слайды в полный экран
+var slides6 = document.getElementsByClassName(".gallery6_item");
+var slides_section = document.getElementById("slides_section");
+var slides_img = document.getElementById("slides_img");
+/*slides6.forEach((item, i) => {
+  item.onclick = function() {
+    slides_section.style.transform = "scaleY(1)";
+    slides_img.src=`img/sixth_img${i+1}.jpg`
+  }
+});*/
+
+slides_section.onclick = function() {
+  slides_section.style.transform = "scaleY(0)";
+}

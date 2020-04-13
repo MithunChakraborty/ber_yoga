@@ -21,8 +21,8 @@
                             justify-content: space-around
                             > a
                                 > img
-                                    width: 24.1rem
-                                    height: 4.4rem
+                                    width: 14.7rem * 0.65
+                                    height: 6.9rem * 0.65
                             .mobile_menu_enter
                                 cursor: pointer
                                 display: block
@@ -56,10 +56,8 @@
                                 color: #e5d187
                         > .contact
                             display: none
-                            > button
-                                > img
-                            > p
                 #first_section
+                    padding-bottom: 3rem
                     *
                         +reset
                     > .container
@@ -69,7 +67,7 @@
                             margin-left: 1rem
                             margin-right: 1rem
                             margin-top: 3.4rem
-                            > .address                               
+                            > .address
                                 +reset
                                 margin-bottom: 3.5rem
                                 > div
@@ -87,8 +85,8 @@
                                 order: 2
                                 > a
                                     > img
-                                        width: 30.6rem
-                                        height: 5.4rem
+                                        width: 18.1rem
+                                        height: 8.7rem
                             > .contact
                                 order: -1
                                 +reset
@@ -153,19 +151,27 @@
                                 +reset
                                 font-size: 1.6rem
                                 letter-spacing: 0.07rem
-                            > a
-                                +reset
-                                width: 27.4rem
-                                height: 4.1rem
-                                box-shadow: 0 0 2.4rem 0.1rem rgba(0, 0, 0, 0.27), 0 0 1.3rem rgba(255, 255, 255, 0.08);
-                                border-radius: 1rem
-                                background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%)
-                                font-size: 1.1rem
-                                letter-spacing: 0.1rem
-                                font-family: Merriweather
-                                font-weight: 700
-                                margin-top: 3.2rem
-                                margin-bottom: 2.4rem
+                            > .btn_block
+                                justify-content: space-around
+                                > a
+                                    +reset
+                                    width: 17.7rem
+                                    height: 3.7rem
+                                    box-shadow: 0 0 2.4rem 0.1rem rgba(0, 0, 0, 0.27), 0 0 1.3rem rgba(255, 255, 255, 0.08)
+                                    border-radius: 1rem
+                                    font-size: 1.1rem
+                                    letter-spacing: 0.05rem
+                                    font-family: Merriweather
+                                    font-weight: 700
+                                    margin-top: 3.2rem
+                                    margin-bottom: 1rem
+                                > a:first-child
+                                    color: #513623
+                                    background-color: #e1cb89
+                                > a:nth-child(2)
+                                    color: #fff
+                                    background-color: transparent
+                                    border: 0.4rem solid #e1cb89
                 #second_section
                     +reset
                     > .container
@@ -173,13 +179,16 @@
                         margin-top: 1.2rem
                         width: 100%
                         margin-left: 1.2rem
-                        margin-right: 1.2rem 
+                        margin-right: 1.2rem
                         > .gallery_wrapper
-                            > img
-                                +reset
-                                width: 19.2rem
-                                height: 18.8rem
-                                margin-bottom: 1.2rem
+                            > div
+                                > img
+                                    +reset
+                                    width: 19.2rem
+                                    height: 18.8rem
+                                    margin-left: 0.6rem
+                                    margin-right: 0.6rem
+                                    margin-bottom: 1rem
                         > .view_menu_block
                             > img
                                 +reset
@@ -210,9 +219,91 @@
                     > .peppers2_mobile
                         display: block
                         z-index: -1
+                #delivery_section
+                    .container
+                        width: 100%
+                        h3
+                            +reset
+                            font-size: 3rem
+                            font-weight: 400
+                            margin-bottom: 2.2rem
+                        #menu_delivery
+                            +reset
+                            margin-bottom: 1.5rem
+                            a
+                                +reset
+                                margin-left: 1.1rem
+                                margin-right: 1.1rem
+                                font-size: 1.1rem
+                                line-height: 3rem
+                                letter-spacing: 0.02rem
+                            a::before
+                                height: 0.2rem
+                        #delivery_block
+                            .delivery_block_sect
+                                border: 1px solid #251c06
+                                .delivery_block_sect_item
+                                    border-bottom: 1px solid #251c06
+                                    .main_delivery_item
+                                        .delivery_text
+                                            .del_main_text
+                                                margin-left: 0.3rem
+                                                margin-right: 0.3rem
+                                                font-size: 1rem
+                                                letter-spacing: 0.01rem
+                                                text-align: left
+                                            .del_other_text
+                                                font-size: 0.9rem
+                                                min-width: 6rem
+                                    .del_end_sect
+                                        .delivery_price
+                                            font-size: 1rem
+                                            min-width: 5rem
+                                        .delivery_plus
+                                            .plus
+                                                height: 3rem
+                                                width: 0.1rem
+                                            .plus::before,
+                                            .plus::after
+                                                display: none
+                        #delivery_start
+                            display: none
+                    .del_onion
+                        display: none
+                    .del_pepper
+                        display: none
+                    .del_champ
+                        width: 3.1rem
+                        height: 3.8rem
+                        top: 12rem
+                    .del_basket
+                        background-color: #e2cd8f
+                        padding-top: 0.3rem
+                        padding-bottom: 0.3rem
+                        bottom: 0
+                        right: 0
+                        width: 100vw
+                        justify-content: flex-start
+                        .basket_img
+                            width: 4.6rem
+                            height: 4.6rem
+                            margin-left: 2.5rem
+                            margin-right: 2.5rem
+                            .basket_img2
+                                right: 0
+                                bottom: 0
+                                width: 1.5rem
+                                height: 1.5rem
+                                p
+                                    font-size: 1.1rem
+                        .del_bask_price
+                            display: block
+                            display: flex
+                            justify-content: center
+                            align-items: center
                 #third_section
                     +reset
-                    background: url("../img/third-bg-mobile.png") top  
+                    background: url("../img/third-bg-mobile.png") top
                     > .container
                         +reset
                         padding-top: 4.1rem
@@ -240,7 +331,7 @@
                                     line-height: 1.7rem
                                     top: 14.5rem
                         > button
-                            +reset  
+                            +reset
                             width: 28.6rem
                             height: 4.4rem
                             font-size: 2rem
@@ -261,12 +352,12 @@
                         border: none
                         padding-top: 3rem
                         > p
-                            +reset   
+                            +reset
                             font-size: 1.6rem
                             font-weight: 400
                             letter-spacing: 0.072rem
-                            line-height: 2.2rem  
-                            margin-bottom: 2.5rem    
+                            line-height: 2.2rem
+                            margin-bottom: 2.5rem
                 #fourth_section
                     padding-top: 5rem
                     padding-bottom: 3rem
@@ -322,7 +413,7 @@
                     #wrapper_btn4
                         margin-top: 1rem
                         > button
-                            +reset 
+                            +reset
                             margin-left: 0.2rem
                             margin-right: 0.2rem
                             width: 6px !important
@@ -442,7 +533,7 @@
                                     height: 6rem
                                     margin-bottom: 2.5rem
                                     padding-left: 0.8rem
-                                > a 
+                                > a
                                     width: 5.8rem
                                     height: 6rem
                                     bottom: 2.5rem
@@ -479,7 +570,7 @@
                         > p
                             +reset
                             margin-bottom: 1rem
-                            font-size: 1.6rem                          
+                            font-size: 1.6rem
                     > .footer_contact
                         width: 38.7rem
                         height: 34.8rem
@@ -528,7 +619,7 @@
                                     > img
                                         width: 4.3rem
                                         height: 4.3rem
-                                > a:nth-child(2)                                   
+                                > a:nth-child(2)
                                     > img
                                         width: 6.4rem
                                         height: 4rem
@@ -539,8 +630,6 @@
                     > p
                         margin-bottom: 0.7rem
                         font-size: 1.2rem !important
-            #call_me_section
-            #order_section
     .cont_wind
         padding-left: 2rem
         padding-right: 2rem
@@ -552,7 +641,7 @@
                 font-size: 1.8rem
             > a
                 font-size: 1.8rem
-        > form 
+        > form
             padding-top: 2rem
             > input
                 width: 27rem
@@ -568,17 +657,15 @@
 @media (min-width: 551px) and (max-width: 1010px)
     html
         font-size: 13px
-    .gallery_wrapper
-        justify-content: space-around   !important
 @media (min-width: 501px) and (max-width: 550px)
     html
         font-size: 12px
 @media (min-width: 450px) and (max-width: 500px)
     html
-        font-size: 11px 
+        font-size: 11px
 @media (min-width: 415px) and (max-width: 449px)
     html
-        font-size: 10px                  
+        font-size: 10px
 @media (min-width: 370px) and (max-width: 414px)
     html
         font-size: 9px

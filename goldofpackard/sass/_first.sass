@@ -6,13 +6,14 @@
     color: #dec58c
     background: url("../img/back_1_sect.png") center
     background-size: cover
+    padding-bottom: 6rem
     > .container
         display: flex
         flex-direction: column
         > .logo_block
             display: flex
             justify-content: flex-start
-            padding: 8.5rem 6rem 12rem 6rem
+            padding: 5rem 6rem 10rem 6rem
             > .address
                 display: flex
                 flex: 1
@@ -25,10 +26,9 @@
                     height: 4.4rem
                 > p
                     padding-left: 2rem
-                    font-size: 2.2rem
+                    font-size: 2.6rem
                     font-weight: 400
                     letter-spacing: 0.022rem
-                    > span
             > .logo
                 display: flex
                 flex: 1
@@ -38,8 +38,8 @@
                     width: auto
                     height: auto
                     > img
-                        width: 49.4rem
-                        height: 8.8rem
+                        width: 33.8rem
+                        height: 16.1rem
             > .contact
                 display: flex
                 flex: 1
@@ -56,7 +56,7 @@
                     background-size: contain
                     box-shadow: 0 0 0 rgba(34, 34, 31, 0.75)
                 > p
-                    font-size: 3rem
+                    font-size: 3.5rem
                     font-weight: 400
                     padding-right: 3.7rem
                     padding-left: 2rem
@@ -71,6 +71,7 @@
                         font-size: 2.2rem
                         font-weight: 400
                         color: #dec58c
+                        font-family: $p_font
                 .mobile_menu_enter
                     display: none
                 .mobile_menu_exit
@@ -81,13 +82,13 @@
             display: flex
             flex-direction: column
             > h3
-                font-family: $h_font
-                text-orientation: uppercase
+                font-family: "Romul"
+                text-transform: uppercase
                 text-shadow: 0.9rem 0.2rem 0.7rem rgba(0, 0, 0, 0.6), 0 0 0 rgba(34, 34, 31, 0.75)
-                font-size: 6rem
+                font-size: 5.7rem
                 font-weight: 400
                 line-height: 8rem
-                letter-spacing: 0.09rem
+                letter-spacing: 0.2rem
                 text-align: center
                 margin: 0
                 padding-bottom: 3.2rem
@@ -102,23 +103,38 @@
                 font-weight: 400
                 letter-spacing: 0.12rem
                 text-align: center
-            > a
+            > .btn_block
                 display: flex
+                flex: row wrap
                 justify-content: center
                 align-items: center
-                text-decoration: none
-                cursor: pointer
-                align-self: center
-                margin-top: 6rem
-                margin-bottom: 13rem
-                border: none
-                width: 73.3rem
-                height: 10.7rem
-                box-shadow: 0 0 2.4rem 0.1rem rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08)
-                border-radius: 1rem
-                background-color: #e1cb89
-                background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%)
-                font-size: 3rem
-                font-weight: 700
-                letter-spacing: 0.3rem
-                color: #513623
+                > a
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    text-decoration: none
+                    cursor: pointer
+                    align-self: center
+                    margin-top: 6rem
+                    margin-bottom: 3rem
+                    border: none
+                    width: 53.9rem
+                    height: 9.3rem
+                    box-shadow: 0 0 2.4rem 0.1rem rgba(0, 0, 0, 0.27), 0 0 13px rgba(255, 255, 255, 0.08)
+                    border-radius: 10px
+                    font-size: 2.6rem
+                    font-weight: 700
+                    letter-spacing: 0.3rem
+                    margin-left: 1.5rem
+                    margin-right: 1.5rem
+
+                > a:first-child
+                    color: #513623
+                    background-color: #e1cb89
+                    background-image: linear-gradient(to top, #e3cd70 0%, #e0bf75 56%, #e0bf75 57%, #ebc97c 100%)
+                > a:nth-child(2)
+                    color: #fff
+                    background-color: transparent
+                    color: #d4c5a2
+                    border: 0.5rem solid #e1c572
+                    box-sizing: border-box
