@@ -6,43 +6,64 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Gold of packard</title>
     <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+    <script>
+      new WOW().init();
+    </script>
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          plugins: [ 'dayGrid' ]
+        });
+        calendar.render();
+      });
+    </script>
 </head>
 <body>
     <main>
         <header>
             <div class="container">
                 <div id="mobile_logo_block">
-                    <a href="index.html">
+                    <a href="index.html" class="hover_btn">
                         <img id="logo_mobile" src="icon/logo_big.png" alt="">
                     </a>
                     <button id="mobile_enter" class="mobile_menu_enter"></button>
                     <button id="mobile_exit" class="mobile_menu_exit"></button>
                 </div>
                 <nav>
-                    <a href="#anchor1">
+                    <a class="hover_btn" href="#anchor1">
                         ДОСТАВКА
                     </a>
-                    <a href="#anchor2">
+                    <a class="hover_btn" href="#anchor2">
                         О НАС
                     </a>
-                    <a href="#anchor3">
+                    <a class="hover_btn" href="#anchor3">
                         АКЦИИ
                     </a>
-                    <a href="#anchor4">
+                    <a class="hover_btn" href="#anchor4">
                         ЗАКАЗ БАНКЕТА
                     </a>
-                    <a href="#anchor5">
+                    <a class="hover_btn" href="#anchor5">
                         ОТЗЫВЫ
                     </a>
-                    <a href="#anchor6">
+                    <a class="hover_btn" href="#anchor6">
                         КОНТАКТЫ
                     </a>
                 </nav>
                 <div class="contact">
-                    <button>
-                        <img src="icon/call_head.png" alt="">
+                    <button class="hover_btn">
+                        <a href="tel:202131">
+                          <img src="icon/call_head.png" alt="">
+                        </a>
                     </button>
                     <p>202-131</p>
                 </div>
@@ -61,12 +82,14 @@
                         </p>
                     </div>
                     <div class="logo">
-                        <a href="index.html">
+                        <a href="index.html" class="hover_btn">
                             <img src="icon/logo_big.png" alt="">
                         </a>
                     </div>
                     <div class="contact">
-                        <button id="call"></button>
+                        <a href="tel:202131">
+                              <button class="hover_btn" id="call"></button>
+                        </a>
                         <p>
                             202-131
                         </p>
@@ -102,7 +125,7 @@
         </section>
         <section id="second_section">
             <div class="container">
-                <div class="gallery_wrapper">
+                <div class="gallery_wrapper wow fadeInUp">
                     <div>
                       <img src="img/second-menu-1.png" alt="">
                     </div>
@@ -178,7 +201,7 @@
                 </a>
             </div>
             <div id="delivery_block">
-              <div class="delivery_block_sect"
+              <div class="delivery_block_sect wow fadeInUp"
               style="transform: scaleY(1)">
                 <div class="delivery_block_sect_item">
                   <div class="main_delivery_item">
@@ -612,11 +635,11 @@
           <div class="del_basket" id="del_basket">
             <div class="basket_img">
               <div class="basket_img2">
-                <p>0</p>
+                <p id="basket_number">0</p>
               </div>
             </div>
-            <div class="del_bask_price">
-              Ваш заказ &ensp;<span>0</span> &ensp; руб.
+            <div class="del_bask_price" id="del_bask_price">
+              Ваш заказ &ensp;<span id="basket_number_mob">0</span> &ensp; руб.
             </div>
           </div>
           <a id="anchor2" class="_anchor"></a>
@@ -810,7 +833,7 @@
             <h3>
                 путь к безупречному банкету
             </h3>
-            <div class="container">
+            <div class="container wow fadeInUp">
                 <div class="wrapper">
                     <div>
                         <img src="img/fifth_img1.png" alt="">
@@ -943,7 +966,7 @@
             </div>
             <a id="anchor7" class="_anchor"></a>
         </section>
-        <section id="seventh_section">
+        <section id="seventh_section">  
             <div class="container">
                 <h3>
                     забронируйте столик
@@ -1057,7 +1080,9 @@
                         </p>
                     </div>
                     <div class="contact">
-                        <button></button>
+                        <a href="tel:202131">
+                          <button></button>
+                        </a>
                         <p>202-131</p>
                         <button id="call_me3">
                             Перезвоните мне
@@ -1137,8 +1162,8 @@
                 <div class="close"></div>
             </button>
             <form action="">
-                <input type="text" placeholder="Введите ваше имя">
-                <input type="text" placeholder="Введите номер телефона">
+                <input required type="text" placeholder="Введите ваше имя">
+                <input required type="text" placeholder="Введите номер телефона">
                 <button type="submit">
                     ОТПРАВИТЬ ЗАЯВКУ
                 </button>
@@ -1164,9 +1189,9 @@
                 <div class="close"></div>
             </button>
             <form action="">
-                <input type="text" placeholder="Введите ваше имя">
-                <input type="text" placeholder="Введите вашу фамилию">
-                <input type="text" placeholder="Введите номер телефона">
+                <input required type="text" placeholder="Введите ваше имя">
+                <input required type="text" placeholder="Введите вашу фамилию">
+                <input required type="text" placeholder="Введите номер телефона">
                 <input type="text" placeholder="Ваши пожелания">
                 <input id="date_order" type="hidden">
                 <input id="quantity_order" type="hidden">
@@ -1180,6 +1205,66 @@
     <section id="slides_section">
         <div class="container">
             <img id="slides_img" src="" alt="">
+        </div>
+    </section>
+    <section id="del_order_section">
+        <div class="container cont_wind">
+          <p>Ваш заказ: </p>
+          <section>
+            <div id="basket_container">
+              <!--<div class="basket_item">
+                <a id="basket_del">
+                  <div class="cross"></div>
+                </a>
+                <p class="basket_item_name">
+                  Название блюда dsf sdf sf s es fes fse fesfdf sdfsdfsdfsdf
+                </p>
+                <a id="basket_plus">
+                  <div class="cross_plus"></div>
+                </a>
+                <p id="basket_item_quantity">1</p>
+                <a id="basket_drop">
+                  <div class="cross_plus"></div>
+                </a>
+                <p>Цена &ensp;<span id="basket_item_price"></span> &ensp;руб</p>
+              </div>-->
+            </div>
+            <p class="sect">
+              Сумма &ensp;<span id="basket_items_sum">0</span> руб.
+            </p>
+          </section>
+          <button class="wind_close" id="del_wind_close">
+              <div class="close"></div>
+          </button>
+          <form action="">
+              <input required type="text" placeholder="Введите ваше имя">
+              <input id="del_address" required type="text" placeholder="Введите адрес доставки">
+              <input required type="text" placeholder="Введите номер квартиры">
+              <input required type="text" placeholder="Введите номер телефона">
+              <input type="text" placeholder="Особые пожелания">
+              <input id="delivery_array" type="hidden">
+              <div>
+                <p>
+                  Выберите способ оплаты:
+                </p>
+                <input name="del_radio" checked type="radio" value="Наличные"> Наличные
+                <input name="del_radio" type="radio" value="Онлайн"> Онлайн
+              </div>
+              <button type="submit">
+                  Сделать заказ
+              </button>
+          </form>
+          <section>
+            <p>
+              Доставка в Ленинский и Индустриальный районы - 150 рублей;
+            </p>
+            <p>
+              в Центральный и Октябрьский районы - 190 рублей;
+            </p>
+            <p>
+              другие районы - 210 рублей; Новоалтайск - 250 рублей
+            </p>
+          </section>
         </div>
     </section>
     <script src="js/main.js"></script>

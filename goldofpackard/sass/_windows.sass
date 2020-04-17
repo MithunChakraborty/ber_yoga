@@ -1,7 +1,8 @@
 =section_w
     position: fixed
-    width: 100vw
-    height: 100vh
+    width: 100%
+    height: auto
+    min-height: 100vh
     z-index: 990
     background: rgba(208, 211, 215, 0.7)
     display: flex
@@ -24,6 +25,112 @@
     padding-left: 5rem
     padding-right: 5rem
     position: relative
+    > section
+        display: flex
+        width: 100%
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        #basket_container
+            padding-top: 2rem
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            .basket_item:last-child
+                border-bottom: 0.4rem solid rgba(225, 197, 114, 0.7)
+            .basket_item
+                width: 100%
+                display: flex
+                justify-content: space-between
+                align-items: center
+                color: #251506
+                font-size: 2.5rem
+                font-weight: 400
+                line-height: 3rem
+                letter-spacing: 0.038rem
+                padding-top: 1.8rem
+                padding-bottom: 2rem
+                border-top: 0.4rem solid rgba(225, 197, 114, 0.7)
+                .basket_del
+                    cursor: pointer
+                    position: relative
+                    display: flex
+                    .cross
+                        height: 5.6rem
+                        width: 5.6rem
+                    .cross::before,
+                    .cross::after
+                        position: absolute
+                        left: 2.6rem
+                        top: 1.4rem
+                        content: ' '
+                        height: 2.9rem
+                        width: 0.35rem
+                        background-color: grey
+                        transition: 0.3s
+                    .cross::before
+                        transform: rotate(45deg)
+                    .cross::after
+                        transform: rotate(-45deg)
+                .basket_plus
+                    cursor: pointer
+                    position: relative
+                    display: flex
+                    margin-left: 1rem
+                    margin-right: 1rem
+                    .cross_plus
+                        height: 3rem
+                        width: 3rem
+                        border: 1px solid grey
+                        border-radius: 50%
+                    .cross_plus::before,
+                    .cross_plus::after
+                        position: absolute
+                        left: 1.50rem
+                        top: 0.7rem
+                        content: ' '
+                        height: 1.85rem
+                        width: 0.3rem
+                        background-color: grey
+                        transition: 0.3s
+                    .cross_plus::after
+                        transform: rotate(270deg)
+                .basket_drop
+                    cursor: pointer
+                    position: relative
+                    display: flex
+                    margin-left: 1rem
+                    margin-right: 1rem
+                    .cross_plus
+                        height: 3rem
+                        width: 3rem
+                        border: 1px solid grey
+                        border-radius: 50%
+                    .cross_plus::before
+                        position: absolute
+                        left: 0.75rem
+                        top: 1.5rem
+                        content: ' '
+                        height: 0.3rem
+                        width: 1.85rem
+                        background-color: grey
+                        transition: 0.3s
+                .basket_item_name
+                    max-width: 60rem
+                    text-align: left
+                .basket_item_quantity
+                    font-size: 3rem
+        .sect
+            margin-top: 1rem
+            text-align: right
+            color: #251506
+            font-size: 3rem
+            font-weight: 400
+            line-height: 3rem
+            letter-spacing: 0.038rem
+            align-self: flex-end
     > div
         display: flex
         margin-top: 4.5rem
@@ -84,20 +191,38 @@
         justify-content: center
         align-items: center
         padding-top: 4.5rem
+        > div
+            display: flex
+            color: #251c06
+            font-size: 2.4rem
+            font-weight: 400
+            letter-spacing: 0.036rem
+            padding-bottom: 3.5rem
+            align-items: center
+            > input
+                margin-right: 1.5rem
+                margin-left: 2.5rem
+                width: 3rem
+                height: 3rem
+                background: transparent
+                border-color: #251c06
+                cursor: pointer
         > input
             padding-left: 2.2rem
-            width: 46.5rem
+            //width: 46.5rem
+            width: 100%
             height: 7.7rem
             border-radius: 5px
             border: 0.2rem solid #212121
             background: transparent
-            margin-bottom: 4.5rem
+            margin-bottom: 3.5rem
             color: #828181
             font-size: 2.7rem
             font-weight: 400
             letter-spacing: 0.045rem
             outline: none
         > button
+            text-transform: uppercase
             cursor: pointer
             border: none
             color: #513623
@@ -136,3 +261,26 @@
         > img
             width: 29rem
             height: 58.4rem
+#del_order_section
+    +section_w
+    align-items: flex-start
+    position: absolute !important
+    left: 0
+    .container
+        margin-top: 1.5rem
+        > p
+            padding-top: 3.5rem
+            text-transform: uppercase
+        > section:last-child
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            padding-top: 4rem
+            padding-bottom: 2rem
+            color: #2e2a20
+            font-size: 2rem
+            font-weight: 400
+            letter-spacing: 0.03rem
+            p
+                padding-bottom: 1.5rem

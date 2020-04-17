@@ -25,6 +25,7 @@
         background-size: contain
         left: -7rem
         top: 25rem
+        animation: mover 2s infinite  alternate
     > .fourth_item_right
         position: absolute
         width: 20.8rem
@@ -33,6 +34,7 @@
         background-size: contain
         right: -3rem
         bottom: 7rem
+        animation: mover2 2s infinite  alternate
     > .container
         display: flex
         justify-content: center
@@ -49,19 +51,19 @@
             overflow: hidden
             > .wrapper
                 display: block
-                transition: 0.4s                
+                transition: 0.4s
                 width: inherit
                 > #images
                     display: inline-flex
-                    transition: 0.4s                                           
-                    > div 
+                    transition: 0.4s
+                    > div
                         position: relative
                         > .text-gallery
                             position: absolute
                             width: 116.6rem
                             height: 59.6rem
                             left: 0
-                            top: 0 
+                            top: 0
                             margin-left: 1.5rem
                             margin-right: 1.5rem
                             display: flex
@@ -110,7 +112,7 @@
             cursor: pointer !important
             border: 0
             background: url("../icon/gallery4_btn.png") center
-            background-size: contain          
+            background-size: contain
     #wrapper_btn4
         display: inline-block
         > button

@@ -92,11 +92,12 @@
                                 +reset
                                 align-self: auto
                                 margin-bottom: 1rem
-                                #call
-                                    +reset
-                                    width: 2.2rem
-                                    height: 2rem
-                                    margin-right: 1rem
+                                > a
+                                    #call
+                                        +reset
+                                        width: 2.2rem
+                                        height: 2rem
+                                        margin-right: 1rem
                                 > p
                                     +reset
                                     font-size: 2.2rem
@@ -594,11 +595,12 @@
                             > .contact
                                 +reset
                                 margin-left: 2.7rem
-                                > button:first-child
-                                    +reset
-                                    margin-right: 1.2rem
-                                    width: 2.8rem
-                                    height: 2.6rem
+                                > a
+                                    > button:first-child
+                                        +reset
+                                        margin-right: 1.2rem
+                                        width: 2.8rem
+                                        height: 2.6rem
                                 > p
                                     +reset
                                     margin-right: 1.2rem
@@ -630,9 +632,56 @@
                     > p
                         margin-bottom: 0.7rem
                         font-size: 1.2rem !important
+            #del_order_section
+                > .container
+                    width: 95%
+                    padding: 1rem
+                    > p
+                        margin-bottom: 0.7rem
+                        font-size: 1.2rem !important
     .cont_wind
         padding-left: 2rem
         padding-right: 2rem
+        > section
+            p
+                font-size: 1.3rem
+            #basket_container
+                .basket_item
+                    font-size: 1.2rem
+                    .basket_del
+                        .cross
+                            height: 3rem
+                            width: 3rem
+                        .cross::before,
+                        .cross::after
+                            left: 0.8rem
+                            top: 0.5rem
+                            height: 2rem
+                            width: 0.2rem
+                    .basket_plus
+                        .cross_plus
+                            height: 2rem
+                            width: 2rem
+                        .cross_plus::before,
+                        .cross_plus::after
+                            left: 1rem
+                            top: 0.6rem
+                            height: 1.1rem
+                            width: 0.2rem
+                    .basket_drop
+                        .cross_plus
+                            height: 2rem
+                            width: 2rem
+                        .cross_plus::before
+                            left: 1rem
+                            top: 0.6rem
+                            height: 1.1rem
+                            width: 0.2rem
+                            transform: rotate(270deg)
+                    .basket_item_quantity
+                        font-size: 2rem
+            .sect
+                font-size: 2rem
         > p
             font-size: 1.8rem
         > div
@@ -643,6 +692,16 @@
                 font-size: 1.8rem
         > form
             padding-top: 2rem
+            > div
+                font-size: 1.8rem
+                flex-wrap: wrap
+                justify-content: flex-start
+                > input
+                    margin-top: 1rem
+                    margin-right: 0.5rem
+                    margin-left: 15rem
+                    width: 2.5rem
+                    height: 2.5rem
             > input
                 width: 27rem
                 height: 5rem

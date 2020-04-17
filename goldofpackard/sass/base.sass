@@ -1,13 +1,27 @@
 $h_font: "Romul"
 $p_font: "Merriweather"
+@keyframes mover
+    0%
+        transform: translateY(0)
+    100%
+        transform: translateY(-10px)
+@keyframes mover2
+    0%
+        transform: translateY(0)
+        transform: translateX(0)
+    100%
+        transform: translateX(-10px)
 html
     font-size: 10px
 body
     background: url("../img/so-white.png")
-    overflow-y: hidden
+    overflow-x: hidden
     font-family: $p_font
 input, button
     font-family: $p_font
+#calendar
+    max-width: 900px
+    margin: 40px auto
 @import reset
 @import header
 @import first
@@ -28,3 +42,7 @@ input, button
     position: relative
     height: 2px
     width: 2px
+.hover_btn
+    transition: 0.4s
+.hover_btn:hover
+    opacity: .7

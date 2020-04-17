@@ -71,6 +71,7 @@
                     border-bottom: 2px solid #251c06
                     transition: 0.3s
                     justify-content: space-between
+                    color: #251c06
                     .main_delivery_item
                         display: flex
                         align-items: center
@@ -81,7 +82,6 @@
                             align-items: center
                             .del_main_text
                                 margin-left: 1rem
-                                color: #251c06
                                 font-size: 2.2rem
                                 font-weight: 400
                                 letter-spacing: 0.03rem
@@ -89,7 +89,6 @@
                                 margin-right: 1rem
                                 text-transform: uppercase
                             .del_other_text
-                                color: #251c06
                                 font-size: 1.8rem
                                 font-weight: 400
                                 letter-spacing: 0.02rem
@@ -98,7 +97,6 @@
                         display: flex
                         align-items: center
                         .delivery_price
-                            color: #251c06
                             font-size: 2.2rem
                             font-weight: 400
                             letter-spacing: 0.03rem
@@ -121,7 +119,6 @@
                                 background-color: grey
                                 transition: 0.3s
                                 opacity: 0
-                            .plus::before
                             .plus::after
                                 transform: rotate(270deg)
                 .delivery_block_sect_item:last-child
@@ -148,12 +145,17 @@
             border-radius: 10px
             border: 0.6rem solid #e1c572
             cursor: pointer
+            transition: 0.4s
+        #delivery_start:hover
+            color: #513623
+            background-color: #e1cb89
     .del_onion
         width: 13.8rem
         height: 10.4rem
         position: absolute
         left: 0
         top: 55rem
+        animation: mover 2s infinite  alternate
     .del_pepper
         width: 30.8rem
         height: 34.4rem
@@ -166,10 +168,11 @@
         position: absolute
         right: 0rem
         top: 80rem
+        animation: mover2 2s infinite  alternate
     .del_basket
         z-index: 8
         position: fixed
-        bottom: 70rem
+        bottom: 60rem
         right: 10rem
         display: none
         .basket_img
