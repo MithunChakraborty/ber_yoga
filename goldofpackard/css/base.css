@@ -1244,7 +1244,7 @@ header {
             background-color: grey;
             transition: 0.3s; }
         .cont_wind > section #basket_container .basket_item .basket_item_name {
-          max-width: 60rem;
+          width: 70%;
           text-align: left; }
         .cont_wind > section #basket_container .basket_item .basket_item_quantity {
           font-size: 3rem; }
@@ -2347,6 +2347,8 @@ footer {
         transform: rotate(270deg); }
       .cont_wind > section #basket_container .basket_item .basket_item_quantity {
         font-size: 2rem; }
+      .cont_wind > section #basket_container .basket_item .basket_item_name {
+        width: 70%; }
     .cont_wind > section .sect {
       font-size: 2rem; }
     .cont_wind > p {
@@ -2357,6 +2359,9 @@ footer {
         font-size: 1.8rem; }
       .cont_wind > div > a {
         font-size: 1.8rem; }
+    .cont_wind > button {
+      right: 1.5rem;
+      top: -1.5rem; }
     .cont_wind > form {
       padding-top: 2rem; }
       .cont_wind > form > div {
