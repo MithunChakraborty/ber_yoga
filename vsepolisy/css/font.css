@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "MarsfontB";
+    src: url(../font/MarsfontBold_0.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Marsfont";
+    src: url(../font/MarsfontRegular_1.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Marsfont";
+    src: url(../font/MarsfontItalic.ttf) format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MarsfontM";
+    src: url(../font/MarsfontMedium_0.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MarsfontL";
+    src: url(../font/MarsfontLight_0.ttf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansCyrlB";
+    src: url(../font/MuseoSansCyrl_1.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansCyrlM";
+    src: url(../font/Museo_Sans_Cyrillic_0.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansCyrl";
+    src: url(../font/MuseoSansCyrl.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MuseoSansCyrlL";
+    src: url(../font/MuseoSansCyrl_0.otf);
+    font-style: normal;
+    font-weight: normal;
+}
