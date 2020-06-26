@@ -1,9 +1,7 @@
 #first
   display: flex
   flex-direction: column
-  background: url("../img/first-back.png") center
-  background-color: #080808
-  height: 80.3rem
+  background: url("../img/first-back.png") center #080808
   position: relative
   color: #ffffff
 
@@ -81,23 +79,29 @@
     button
       background: transparent
       margin-top: 6.1rem
+      margin-bottom: 11.3rem
       text-transform: uppercase
       width: 44.5rem
       height: 6.9rem
-      box-shadow: 66px 25px 24px 1px rgba(0, 0, 0, 0.27), 0 0 7px 1px rgba(217, 37, 71, 0.29)
+      box-shadow: 0 0 7px 1px rgba(217, 37, 71, 0.6), inset 0 0 7px 1px rgba(217, 37, 71, 0.6)
       border: 0.3rem solid #7a0303
       border-radius: 0.5rem
-      text-shadow: 4px 1px 22px rgba(0, 0, 0, 0.8), 0 0 7px rgba(146, 13, 16, 0.8)
+      text-shadow: 10px 5px 22px rgba(0, 0, 0, 0.8), 0 0 15px rgba(146, 13, 16, 0.8)
       color: #ffffff
-      font-family: $third_font
+      font-family: $fourth_font
       font-size: 2.4rem
       letter-spacing: 0.12rem
       cursor: pointer
       transition: 0.4s
+      animation-name: change-shadow
+      animation-duration: 2s
+      animation-iteration-count: infinite
+      animation-timing-function: ease-in
+      animation-direction: alternate
 
       &:hover
         background-color: #7a0303
-
+        box-shadow: 0 0 7px 1px rgba(217, 37, 71, 0.6)
 
     #round
       position: absolute
@@ -111,3 +115,4 @@
       animation-duration: 8s
       animation-iteration-count: infinite
       animation-timing-function: linear
+
