@@ -6,7 +6,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "MuseoSansCyrl"; }
+  font-family: "MuseoSansCyrlM"; }
 
 html, body, ul, ol, p, button,
 h1, h2, h3, h4, h5, h6 {
@@ -143,12 +143,26 @@ button {
     #second .container h2 {
       color: #1a1919;
       text-transform: uppercase;
-      text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.7);
+      text-shadow: -3px 4px 4px rgba(29, 29, 29, 0.3);
       font-size: 4rem;
-      letter-spacing: 0.4rem;
+      letter-spacing: 0.6rem;
       margin-top: 9.5rem;
       text-align: center;
-      font-family: "MuseoSansCyrlM"; }
+      font-family: "MuseoSansCyrlM";
+      position: relative; }
+      #second .container h2:after {
+        opacity: 0.7;
+        background: url("../icon/second-figure.png") center no-repeat;
+        background-size: contain;
+        content: "";
+        height: 0.2rem;
+        width: 43.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 7rem;
+        position: absolute; }
     #second .container ul {
       list-style: none;
       display: flex;
@@ -184,7 +198,7 @@ button {
   display: flex;
   justify-content: center;
   color: #1a1919;
-  background: url("../img/first-back.png") center #080808; }
+  background: url("../img/first-back.png") center #0d0d0d; }
   #third .container {
     display: flex;
     flex-direction: column;
@@ -197,48 +211,70 @@ button {
       margin-bottom: 13.3rem;
       text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.7);
       font-size: 4rem;
-      letter-spacing: 0.4rem; }
+      letter-spacing: 0.4rem;
+      position: relative; }
+      #third .container h2:after {
+        opacity: 0.7;
+        background: url("../icon/third-figure.png") center no-repeat;
+        background-size: contain;
+        content: "";
+        height: 0.2rem;
+        width: 43.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 7rem;
+        position: absolute; }
     #third .container ul.content {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       margin-bottom: 6rem;
-      width: 126rem; }
+      width: 150rem; }
       #third .container ul.content li {
         position: relative;
-        width: 33.3rem;
-        height: 32.6rem;
+        width: 42rem;
+        height: 35.9rem;
         margin-bottom: 6rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
         display: flex;
         align-items: flex-start;
-        justify-content: center; }
+        justify-content: flex-start; }
         #third .container ul.content li img {
           position: absolute;
           left: 0;
           top: 0;
-          width: 33.3rem;
-          height: 32.6rem; }
+          width: 42rem;
+          height: 35.9rem; }
         #third .container ul.content li .content-li {
           display: flex;
           flex-direction: column;
-          padding: 3.3rem 7rem 4.7rem 2.4rem;
-          align-items: center;
           z-index: 1;
-          height: 100%; }
+          height: 100%;
+          width: 41.3rem;
+          padding-top: 3.3rem;
+          padding-left: 2.2rem;
+          padding-right: 6rem;
+          padding-bottom: 2.8rem; }
           #third .container ul.content li .content-li h3 {
             font-family: "MuseoSansCyrlM";
-            font-size: 2.3rem;
-            letter-spacing: 0.14rem;
-            line-height: 3rem; }
+            font-size: 2.8rem;
+            letter-spacing: 0.3rem;
+            line-height: 3rem;
+            margin-bottom: 2.1rem;
+            margin-left: 2rem; }
           #third .container ul.content li .content-li p {
             font-family: "MuseoSansCyrlB";
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             line-height: 3rem;
-            letter-spacing: 0.018rem; }
-          #third .container ul.content li .content-li button {
-            justify-self: flex-end;
+            letter-spacing: 0.1rem;
+            margin-left: 2rem; }
+          #third .container ul.content li .content-li a {
+            text-decoration: none;
+            margin: auto auto 2.8rem;
+            align-content: flex-end;
             font-family: "MuseoSansCyrlB";
             width: 25rem;
             height: 3.9rem;
@@ -249,7 +285,149 @@ button {
             color: #1a1919;
             font-size: 2.2rem;
             letter-spacing: 0.2rem;
-            cursor: pointer; }
+            cursor: pointer;
+            border-radius: 0.4rem;
+            transition: 0.4s;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            #third .container ul.content li .content-li a:hover {
+              background-color: #1a1919;
+              border: 0.3rem solid #000;
+              color: #ffffff; }
+        #third .container ul.content li .in-dev {
+          width: 93%;
+          height: 97%;
+          z-index: 2;
+          position: absolute;
+          left: 0;
+          right: 0;
+          background-color: #1a1919;
+          opacity: 0.8;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #third .container ul.content li .in-dev h3 {
+            font-size: 3rem;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.3rem; }
+
+#fourth {
+  display: flex;
+  justify-content: center;
+  color: #1a1919;
+  background: url("../img/second-back.png") center #0d0d0d;
+  font-family: "MuseoSansCyrlM"; }
+  #fourth .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11.1rem;
+    margin-bottom: 10.9rem; }
+    #fourth .container h2 {
+      text-shadow: -3px 4px 4px rgba(63, 62, 62, 0.5);
+      color: #2f2e2e;
+      font-family: "MuseoSansCyrlM";
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      margin-bottom: 14rem;
+      position: relative; }
+      #fourth .container h2:after {
+        opacity: 0.7;
+        background: url("../icon/fourth-figure.png") center no-repeat;
+        background-size: contain;
+        content: "";
+        height: 0.5rem;
+        width: 87.1rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 7rem;
+        position: absolute; }
+    #fourth .container ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; }
+      #fourth .container ul li {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 22.5rem;
+        margin-left: 5rem;
+        margin-right: 5rem; }
+        #fourth .container ul li:first-child img {
+          width: 12.2rem;
+          height: 15rem; }
+        #fourth .container ul li:nth-child(2) img {
+          width: 12.1rem;
+          height: 15.2rem; }
+        #fourth .container ul li:nth-child(3) img {
+          width: 15.1rem;
+          height: 15rem; }
+        #fourth .container ul li:last-child img {
+          width: 15.7rem;
+          height: 14.3rem; }
+        #fourth .container ul li h4 {
+          font-size: 2.4rem;
+          line-height: 3rem;
+          letter-spacing: 0.35rem;
+          margin-top: 2.6rem;
+          text-align: center;
+          font-family: "MuseoSansCyrlM"; }
+        #fourth .container ul li p {
+          margin-top: 2rem;
+          font-size: 1.8rem;
+          line-height: 3rem;
+          letter-spacing: 0.1rem;
+          text-align: center; }
+        #fourth .container ul li:nth-child(1):after, #fourth .container ul li:nth-child(2):after, #fourth .container ul li:nth-child(3):after {
+          position: absolute;
+          background: url("../icon/fourth-str.png") center no-repeat;
+          background-size: contain;
+          content: "";
+          height: 4.9rem;
+          width: 10rem;
+          margin-left: auto;
+          margin-right: auto;
+          left: 21rem;
+          top: 8rem; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: #f6f2f2;
+  background: url("../img/first-back.png") center #0d0d0d;
+  font-family: "MuseoSansCyrlM";
+  padding: 7.4rem 15.8rem 8.7rem 12.6rem; }
+  footer .left-footer {
+    width: 99rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: 0.2rem; }
+    footer .left-footer p {
+      width: 100%; }
+  footer .right-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; }
+    footer .right-footer a {
+      cursor: pointer; }
+    footer .right-footer a:first-child {
+      font-size: 3.4rem;
+      letter-spacing: 0.4rem;
+      font-family: "MarsfontL";
+      text-transform: uppercase;
+      color: #f6f2f2;
+      text-decoration: none;
+      margin-bottom: 5.1rem; }
+    footer .right-footer a:last-child {
+      font-size: 2.2rem;
+      text-decoration: underline;
+      color: #f6f2f2; }
 
 @media (min-width: 1921px) and (max-width: 3000px) {
   html {

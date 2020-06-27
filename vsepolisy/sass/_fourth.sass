@@ -1,0 +1,97 @@
+#fourth
+  display: flex
+  justify-content: center
+  color: #1a1919
+  background: url("../img/second-back.png") center #0d0d0d
+  font-family: $third_font
+
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: 11.1rem
+    margin-bottom: 10.9rem
+
+    h2
+      text-shadow: -3px 4px 4px rgba(63, 62, 62, 0.5)
+      color: #2f2e2e
+      font-family: $third_font
+      font-size: 4rem
+      text-transform: uppercase
+      letter-spacing: 0.5rem
+      margin-bottom: 14rem
+      position: relative
+
+      &:after
+        opacity: 0.7
+        background: url("../icon/fourth-figure.png") center no-repeat
+        background-size: contain
+        content: ""
+        height: 0.5rem
+        width: 87.1rem
+        margin-left: auto
+        margin-right: auto
+        left: 0
+        right: 0
+        top: 7rem
+        position: absolute
+
+    ul
+      list-style: none
+      display: flex
+      flex-wrap: wrap
+
+      li
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 22.5rem
+        margin-left: 5rem
+        margin-right: 5rem
+
+        &:first-child img
+          width: 12.2rem
+          height: 15rem
+
+        &:nth-child(2) img
+          width: 12.1rem
+          height: 15.2rem
+
+        &:nth-child(3) img
+          width: 15.1rem
+          height: 15rem
+
+        &:last-child img
+          width: 15.7rem
+          height: 14.3rem
+
+        h4
+          font-size: 2.4rem
+          line-height: 3rem
+          letter-spacing: 0.35rem
+          margin-top: 2.6rem
+          text-align: center
+          font-family: $third_font
+
+        p
+          margin-top: 2rem
+          font-size: 1.8rem
+          line-height: 3rem
+          letter-spacing: 0.1rem
+          text-align: center
+
+        &:nth-child(1), &:nth-child(2),
+        &:nth-child(3)
+
+          &:after
+            position: absolute
+            background: url("../icon/fourth-str.png") center no-repeat
+            background-size: contain
+            content: ""
+            height: 4.9rem
+            width: 10rem
+            margin-left: auto
+            margin-right: auto
+            left: 21rem
+            top: 8rem
