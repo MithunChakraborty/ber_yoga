@@ -29,7 +29,7 @@ button {
 #first {
   display: flex;
   flex-direction: column;
-  background: url("../img/first-back.png") center #080808;
+  background: url("../img/first-back.png") center #0d0d0d;
   position: relative;
   color: #ffffff; }
   #first .logo {
@@ -396,16 +396,202 @@ button {
           left: 21rem;
           top: 8rem; }
 
+#fifth {
+  display: flex;
+  justify-content: center;
+  color: #1a1a1a;
+  background: url("../img/first-back.png") center #0d0d0d;
+  position: relative; }
+  #fifth .fifth-back1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: url("../img/first-back3.png") center no-repeat;
+    background-size: contain;
+    width: 43.2rem;
+    height: 24.3rem; }
+  #fifth .fifth-back2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../img/first-back3.png") center no-repeat;
+    background-size: contain;
+    width: 43.2rem;
+    height: 24.3rem;
+    transform: rotate(180deg); }
+  #fifth .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8.7rem;
+    padding-bottom: 11.6rem; }
+    #fifth .container h2 {
+      text-transform: uppercase;
+      text-align: center;
+      text-shadow: -3px 4px 4px rgba(0, 0, 0, 0.27);
+      font-size: 4rem;
+      color: #eae7e7;
+      letter-spacing: 0.5rem;
+      margin-bottom: 11.6rem;
+      position: relative; }
+      #fifth .container h2:after {
+        opacity: 0.7;
+        background: url("../icon/third-figure.png") center no-repeat;
+        background-size: contain;
+        content: "";
+        height: 0.2rem;
+        width: 43.9rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 7rem;
+        position: absolute; }
+    #fifth .container .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      #fifth .container .content .content-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4.4rem; }
+        #fifth .container .content .content-item .question {
+          margin-bottom: 0.5rem;
+          background-color: #f2f2f2;
+          width: 117.3rem;
+          color: #1a1a1a;
+          font-size: 2.4rem;
+          line-height: 4.8rem;
+          letter-spacing: 0.24rem;
+          border-radius: 0.5rem;
+          display: flex;
+          justify-content: space-between;
+          cursor: pointer;
+          z-index: 2; }
+          #fifth .container .content .content-item .question p {
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            padding-left: 4.7rem; }
+          #fifth .container .content .content-item .question .question-btn {
+            width: 9.3rem;
+            border-left: 0.2rem solid #1a1a1a;
+            display: flex;
+            align-items: center;
+            justify-content: center; }
+            #fifth .container .content .content-item .question .question-btn div {
+              background: url("../icon/fifth-icon.png") center no-repeat;
+              background-size: contain;
+              width: 4rem;
+              height: 2rem;
+              transition: all 0.3s ease-in-out; }
+        #fifth .container .content .content-item .answer {
+          background-color: #f2f2f2;
+          width: 117.3rem;
+          padding: 2.1rem 17.8rem 2.4rem 4.7rem;
+          color: #1a1a1a;
+          font-size: 2.1rem;
+          line-height: 3.1rem;
+          letter-spacing: 0.15rem;
+          border-radius: 0.5rem;
+          margin-top: -30rem;
+          transition: all 0.3s ease-in-out;
+          opacity: 0; }
+          #fifth .container .content .content-item .answer a {
+            font-size: 2.2rem; }
+
+#sixth {
+  display: flex;
+  justify-content: center;
+  color: #1a1919;
+  background: url("../img/second-back.png") center #0d0d0d;
+  font-family: "MuseoSansCyrlM"; }
+  #sixth .container {
+    margin-top: 9.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem; }
+    #sixth .container h2 {
+      text-shadow: -3px 4px 4px rgba(63, 62, 62, 0.5);
+      color: #2f2e2e;
+      font-family: "MuseoSansCyrlM";
+      font-size: 4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      margin-bottom: 10.1rem;
+      position: relative;
+      margin-bottom: 10.1rem; }
+      #sixth .container h2:after {
+        opacity: 0.7;
+        background: url("../icon/fourth-figure.png") center no-repeat;
+        background-size: contain;
+        content: "";
+        height: 0.5rem;
+        width: 87.1rem;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 7rem;
+        position: absolute; }
+    #sixth .container ul.content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 150rem;
+      list-style: none; }
+      #sixth .container ul.content li {
+        width: 36rem;
+        box-shadow: -3px 4px 4px rgba(63, 62, 62, 0.5);
+        background-color: #f8f8f8;
+        border-radius: 0.3rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 6rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem; }
+        #sixth .container ul.content li img {
+          width: 35.6rem;
+          height: 25.6rem; }
+        #sixth .container ul.content li h3 {
+          font-size: 1.8rem;
+          line-height: 3rem;
+          text-transform: uppercase;
+          letter-spacing: 0.2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2.1rem 2rem 1.4rem;
+          text-align: center; }
+    #sixth .container #more {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #sixth .container #more a {
+        color: #2f2e2e;
+        font-family: "MuseoSansCyrlB";
+        font-size: 2rem;
+        text-decoration: underline;
+        letter-spacing: 0.2rem;
+        margin-right: 1rem; }
+      #sixth .container #more div {
+        background: url("../icon/fifth-icon.png") center no-repeat;
+        background-size: contain;
+        width: 1.6rem;
+        height: 1rem;
+        transition: all 0.3s ease-in-out; }
+
 footer {
   display: flex;
   justify-content: space-between;
   color: #f6f2f2;
   background: url("../img/first-back.png") center #0d0d0d;
-  font-family: "MuseoSansCyrlM";
+  font-family: "Marsfont";
   padding: 7.4rem 15.8rem 8.7rem 12.6rem; }
   footer .left-footer {
     width: 99rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 3rem;
     letter-spacing: 0.2rem; }
     footer .left-footer p {
@@ -419,7 +605,6 @@ footer {
     footer .right-footer a:first-child {
       font-size: 3.4rem;
       letter-spacing: 0.4rem;
-      font-family: "MarsfontL";
       text-transform: uppercase;
       color: #f6f2f2;
       text-decoration: none;
@@ -427,7 +612,8 @@ footer {
     footer .right-footer a:last-child {
       font-size: 2.2rem;
       text-decoration: underline;
-      color: #f6f2f2; }
+      color: #f6f2f2;
+      font-family: "MuseoSansCyrlM"; }
 
 @media (min-width: 1921px) and (max-width: 3000px) {
   html {
