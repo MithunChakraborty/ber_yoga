@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все полисы - Осаго - шаг 2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="sass/base.css">
+    <link rel="stylesheet" type="text/css" href="css/cssworld.ru-xcal.css" />
+    <script type="text/javascript" src="js/cssworld.ru-xcal-en.js"></script>
+</head>
+<body>
+    <main>
+        <section id="first" style="background: url('img/second-back.png') center #080808; height: auto;">
+            <header id="header-osago">
+                <div class="logo">
+                    <a href="index.html"><h2>Все полисы</h2></a>
+                    <button id="in-menu"></button>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="#">Наши преимущества</a></li>
+                    <li><a href="#">Виды страхования</a></li>
+                    <li><a href="#">Как мы работаем</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Новости и статьи</a></li>
+                </ul>
+            </header>
+            <div class="osago-content">
+                <h2>Оформление ОСАГО онлайн</h2>
+                <form id="formOsago2" action="osago-second-step.html">
+                    <section>
+                        <h5>Водители</h5>
+                        <div>
+                            <div class="vod">
+                                <div></div>
+                                <p>1 водитель</p>
+                            </div>
+                            <div class="add-vod">
+                                <div></div>
+                                <a>Добавить водителя</a>
+                            </div>
+                        </div>
+                    </section>
+                    <ul>
+                        <li class="content-item">
+                            <label>Фамилия</label>
+                            <input class="osago-inputs-text" type="text" name="formOsago2input1" id="formOsago2input1" required>
+                        </li>
+                        <li class="content-item">
+                            <label>Имя</label>
+                            <input class="osago-inputs-text" type="text" name="formOsago2input2" id="formOsago2input2" required>
+                        </li>
+                        <li class="content-item">
+                            <label>Отчество</label>
+                            <input class="osago-inputs-text" type="text" name="formOsago2input3" id="formOsago2input3" required>
+                        </li>
+                        <li class="content-item calendar">
+                            <label>Дата рождения</label>
+                            <input class="osago-inputs-text" type="text" name="formOsago2input4" id="formOsago2input4" required onClick="xCal(this)" onKeyUp="xCal()">
+                            <div>
+                                <div></div>
+                            </div>
+                        </li>
+                        <li class="content-item" id="spec">
+                            <div>
+                                <label>Серия ВУ</label>
+                                <input class="osago-inputs-text" type="text" name="formOsago2input5" id="formOsago2input5" required>
+                            </div>
+                            <div>
+                                <label>Номер ВУ</label>
+                                <input class="osago-inputs-text" type="text" name="formOsago2input6" id="formOsago2input6" required>
+                            </div>
+                        </li>
+                        <li class="content-item calendar">
+                            <label>Дата выдачи первого ВУ</label>
+                            <input class="osago-inputs-text" type="text" name="formOsago2input7" id="formOsago2input7" required onClick="xCal(this)" onKeyUp="xCal()">
+                            <div>
+                                <div></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="submit" value="Рассчитать"></p>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="left-footer">
+                <p>
+                    КОМПАНИЯ ОСУЩЕСТВЛЯЕТ ДЕЯТЕЛЬНОСТЬ В СФЕРЕ<br>
+                    СТРАХОВАНИЯ ТРАНСПОРТНЫХ СРЕДСТВ<br>
+                    <br><br>
+                    Согласно Федеральному закону РФ «Об обязательном страховании гражданской ответственности
+                    владельцев транспортных средств» цена на полис Осаго формируется с учетом базовой ставки
+                    и коэффициентов страховых тарифов утвержденных ЦБ РФ ( Указание ЦБ РФ от 04.12.2018 № 5000-У).
+                    Клиент получает на электронную почту полис электронного образца.
+                    Проверить подлинность полиса можно на сайте РСА.
+                </p>
+            </div>
+            <div class="right-footer">
+                <a href="#">Все Полисы</a>
+                <a>Политика конфиденциальности</a>
+            </div>
+        </footer>
+    </main>
+    <script src="js/mobile.js"></script>
+    <script src="js/select.js"></script>
+</body>
+</html>

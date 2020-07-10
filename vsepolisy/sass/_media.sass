@@ -14,15 +14,35 @@
   html
     font-size: 6px
 
-@media (min-width: 320px) and (max-width: 400px)
+@media (min-width: 315px) and (max-width: 1010px)
+
   #first
     height: 100vh
 
+    .active-menu
+      background-color: #212020
+      position: fixed
+      z-index: 999
+      width: 100vw
+
+      .logo
+        #in-menu
+          background: url("../icon/out-menu.png") center no-repeat
+
+      #nav-menu
+        margin-top: 0rem
+        opacity: 1  
+        padding-top: 4rem
+        padding-bottom: 4rem
+
     header
+      display: flex
+      flex-direction: column
+
       .logo
         margin: 0
-        margin-top: 1.9rem
-        margin-bottom: 1.5rem
+        padding-top: 1.9rem
+        padding-bottom: 1.5rem
         padding-left: 2.6rem
         padding-right: 2.6rem
         justify-content: space-between
@@ -41,12 +61,13 @@
           cursor: pointer
 
     .first-back2
-      background: url("../icon/first-back2-mobile.png") center no-repeat
+      //background: url("../icon/first-back2-mobile.png") center no-repeat
       width: 100%
       background-size: cover
       height: 43vh
       right: 0
       bottom: 0
+      opacity: .6
 
     .first-back3
       display: none
@@ -66,6 +87,7 @@
         margin: 0
         margin-left: 2rem
         margin-right: 2rem
+        font-family: $second-font
         li
           margin-left: 2.5rem
           margin-bottom: 1.7rem
@@ -84,13 +106,13 @@
         letter-spacing: 0.12rem
         font-size: 1.1rem
         border: 0.2rem solid #7a0303
-        margin-right: 5rem
+        margin-right: 9rem
 
       #round
         width: 5.6rem
         height: 5.7rem
-        top: 29rem
-        left: 25rem
+        top: 26rem
+        left: 72vw
 
   #second
     .container
@@ -107,6 +129,7 @@
           top: 3.5rem
 
       ul
+        justify-content: center
         margin-top: 4rem
         li
           margin-bottom: 2.4rem
@@ -116,11 +139,14 @@
             img
           h3
             margin-top: 1.2rem
+            font-size: 2rem
           p
             margin-top: 0.6rem
-            font-size: 1.7rem
+            font-size: 1.4rem
 
   #third
+    overflow: hidden
+
     .container
       margin: 0
       padding: 2.6rem 1.5rem 2.5rem
@@ -141,22 +167,29 @@
         width: 100%
 
         li
-          width: 29.6rem
-          height: 31.1rem
+          width: auto
+          height: 29rem
           margin: 0
 
           img
-            width: 29.6rem
-            height: 31.1rem
+            width: 29rem
+            height: 29rem
 
           .content-li
             padding: 0
+            padding-left: 1.7rem
+            padding-right: 3.5rem
+            padding-top: 2.5rem
+            padding-bottom: 3rem
+            width: 29rem
+            height: 29rem
 
             h3
               margin: 0
               font-size: 2.4rem
               line-height: 2.536rem
               letter-spacing: 0.14rem
+              margin-bottom: 3rem
             p
               margin: 0
               font-size: 1.5rem
@@ -168,10 +201,227 @@
               height: 3.3rem
               border: 0.2rem solid #7a0303
               font-size: 1.9rem
-              letter-spacing: 0.15rem
+              letter-spacing: 0.15rem            
+              margin: auto auto 2rem
 
               &:hover
           .in-dev
+            width: 29rem
+            height: 29rem
             margin: 0
             h3
               margin: 0
+              font-size: 2rem
+
+  #fourth
+    .container
+      margin: 0
+      padding: 2.6rem 1.5rem 2.5rem
+
+      h2
+        margin: 0
+        font-size: 2.1rem
+        letter-spacing: 0.3rem
+        text-align: center
+
+        &:after
+          height: 0.1rem
+          width: 70%
+          top: 8rem
+      ul
+        margin-top: 3rem
+        width: 100%
+        justify-content: center
+        li
+          margin: 0
+
+          img
+            margin-left: 2rem
+
+          &:first-child img
+            width: 12.2rem * 0.8
+            height: 15rem * 0.8
+          &:nth-child(2) img
+            width: 12.1rem * 0.8
+            height: 15.2rem * 0.8
+          &:nth-child(3) img
+            width: 15.1rem * 0.8
+            height: 15rem * 0.8
+          &:last-child img
+            width: 15.7rem * 0.8
+            height: 14.3rem * 0.8
+          h4
+            margin-top: 1rem
+            font-size: 2.2rem
+            letter-spacing: 0.2rem
+          p
+            margin-top: 0.3rem
+            font-size: 1.5rem
+            letter-spacing: 0.1rem
+            line-height: 2rem
+          &:nth-child(1), &:nth-child(2),
+          &:nth-child(3)
+            &:after
+              position: static
+              height: 4.9rem * 0.7
+              width: 10rem * 0.7
+              margin-left: auto
+              margin-right: auto
+              margin-top: 2rem
+              margin-bottom: 1rem
+              transform: rotate(90deg)
+
+  #fifth
+    .fifth-back1
+      display: none
+    .fifth-back2
+      display: none
+    .container
+      margin: 0
+      padding: 2.6rem 1.5rem 2.5rem
+
+      h2
+        margin: 0
+        font-size: 2.1rem
+        letter-spacing: 0.3rem
+        text-align: center
+        line-height: 3rem
+
+        &:after
+          height: 0.1rem
+          width: 90%
+          top: 7rem
+
+      .content
+        margin-top: 3rem
+        .content-item
+          .question
+            width: 29.4rem
+            line-height: 3.5rem
+            p
+              font-size: 1.2rem
+              letter-spacing: 0.1rem
+              padding: 0
+              line-height: 1.8rem
+              padding-left: 1rem
+              padding-top: 0.9rem
+              padding-bottom: 0.9rem
+              max-width: 29.4rem - 3.1rem
+            .question-btn
+              width: 3rem
+              border-left: 0.1rem solid #1a1a1a
+              div
+                width: 4rem * 0.5
+                height: 2rem * 0.5
+          .answer
+            width: 29.4rem
+            font-size: 1.2rem
+            letter-spacing: 0.1rem
+            padding: 1rem
+            line-height: 1.8rem
+            a
+              font-size: 1.2rem
+              letter-spacing: 0.1rem
+
+  #sixth
+    .container
+      margin: 0
+      padding: 2.6rem 1.5rem 2.5rem
+
+      h2
+        margin: 0
+        font-size: 2.1rem
+        letter-spacing: 0.3rem
+        text-align: center
+        line-height: 3rem
+
+        &:after
+          height: 0.1rem
+          width: 90%
+          top: 7rem
+
+      ul.content
+        margin-top: 3rem
+        width: 100%
+        li
+          margin: 0
+          width: 35.6rem * 0.7
+          margin-bottom: 4rem
+          a
+            img
+              width: 35.6rem * 0.7
+              height: 25.6rem * 0.7
+
+            h3
+              font-family: $fourth-font
+              font-size: 1.3rem
+              width: 35.6rem * 0.7
+              line-height: 2rem
+              letter-spacing: 0.15rem
+              padding: 0.8rem 1rem 1.2rem
+      
+      #more
+        a
+          font-size: 1.7rem
+        div
+
+  footer
+    margin: 0
+    padding: 2.6rem 1.5rem 2.5rem
+    flex-direction: column-reverse
+
+    .left-footer
+      width: auto
+      p
+        text-align: center
+        font-size: 1.3rem
+        letter-spacing: 0.1rem
+        line-height: 2rem
+
+    .right-footer
+      align-items: center
+      a
+      a:first-child
+        margin-bottom: 2rem
+      a:last-child
+        font-size: 1.6rem
+        text-align: center
+        margin-bottom: 3rem
+
+  #header-osago
+    padding-bottom: 1.5rem
+
+  .osago-content
+    padding-top: 2rem
+    padding-left: 1rem
+    padding-right: 1rem
+    padding-bottom: 2rem
+
+    h2
+      margin: 0
+      font-size: 2.1rem
+      letter-spacing: 0.3rem
+      text-align: center
+      line-height: 3rem
+    
+    form
+      width: 100%
+      margin-top: 3rem
+      ul
+        margin-bottom: 1rem
+        li
+          //height: 8rem
+          margin-bottom: 5rem
+          width: inherit
+          label
+            font-size: 1.4rem
+          .select, .osago-inputs-text
+            width: inherit
+            font-size: 1.4rem
+            option
+              font-size: 1.1rem
+
+      input[type="submit"]
+        width: 90% 
+        height: 4rem  
+        font-size: 1.7rem
